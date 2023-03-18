@@ -3,7 +3,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 function Section5() {
   return (
-    <section className='h-[100vh] w-[100%] py-[5%] bg-black px-[3%]'>
+    <section className='h-[100%] w-[100%] py-[5%] bg-black px-[3%]'>
         <div className='w-[100%] h-[50%] grid grid-cols-5 gap-1 grid-flow-row'>
         <div className='bg-[#29292e] col-span-2 '>
         <div className=' grid h-[100%] grid-cols-10 grid-flow-row'>

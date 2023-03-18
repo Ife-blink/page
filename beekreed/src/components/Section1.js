@@ -8,7 +8,12 @@ function Section1() {
   })
 
   return (
-    <section className='grid grid-cols-6 py-[5%] grid-row-2'>
+    <section className='grid grid-cols-6 grid-row-3'>
+       <div className='col-span-6 h-[6rem] mb-[4rem] w-[100%]'>
+        <div className='w-[15%] h-[100%] bg-white border-[1px] border-purple-600 '>
+          Logo
+        </div>
+       </div>
         <div className='col-span-4 pl-[5%] '>
         <h3 className='font-sans text-[2.2rem]'>The synergy of human expertise and emerging technology allows us to deliver custom experiences that boost our client's growth.</h3>
         </div>

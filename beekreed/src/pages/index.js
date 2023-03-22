@@ -14,6 +14,7 @@ import Section5 from '@/components/Section5'
 import Section6 from '@/components/Section6'
 import Section7 from '@/components/Section7'
 import Footer from '@/components/Footer'
+import Loader from '@/components/Loader'
 import { Player } from '@lottiefiles/react-lottie-player'
 
 
@@ -37,22 +38,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex flex-col bg-white'>
-        <div className='w-[100%] border-b-2 sticky bg-white border-[#00000005]'>
+        <div className='w-[100%] text-black border-b-2 sticky bg-white border-[#00000005]'>
        <div className='p-[1rem] w-[100%] flex justify-center items-center'>
        <h1 className='border-black font-sans font-semibold px-[1rem] border-[3px]'>Beekreed</h1>
        </div>
        
        </div>
-       <Hero />
-       <Section1 />
+       {/* <Loader /> */}
+       {/* <Hero />
+       <Section1 /> */}
        <Section6 />
+       {/* 
+      
+       
        <Section7 />
        <Section3 />
          
-       {/*  */}
+       
        <Section4 />
        <Section5 />
-       <Footer />
+       <Footer /> */}
       </main>
     </>
   )

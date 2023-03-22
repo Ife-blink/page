@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { useEffect } from 'react'
 
 function Section1() {
@@ -7,15 +8,25 @@ function Section1() {
     import ('@dotlottie/player-component')
   })
 
+  const Partner = ({logo}) => {
+     return <div className='w-[12rem] h-[100%] bg-white border-[1px] border-purple-600 '>
+     {logo}
+   </div>
+  }
   return (
     <section className='grid grid-cols-6 grid-row-3'>
-       <div className='col-span-6 h-[6rem] mb-[4rem] w-[100%]'>
-        <div className='w-[15%] h-[100%] bg-white border-[1px] border-purple-600 '>
-          Logo
+       <div className='col-span-6 overflow-x-auto flex flex-row h-[6rem] mb-[4rem] w-[100%]'>
+        <div className='flex flex-row justify-between w-[100%] px-[10%]'>
+          <Image src="logo/logo1.svg" width={80} height={100} />
+          <Image src="logo/logo2.svg" width={150} height={150} />
+          <Image src="logo/logo3.svg" width={150} height={150} />
+          <Image src="logo/logo4.svg" width={150} height={150} />
+          <Image src="logo/logo5.svg" width={150} height={150} />
+        {/* {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((pop) => {return <Partner logo={pop.logo} />})} */}
         </div>
        </div>
         <div className='col-span-4 pl-[5%] '>
-        <h3 className='font-sans text-[2.2rem]'>The synergy of human expertise and emerging technology allows us to deliver custom experiences that boost our client's growth.</h3>
+        <h3 className='font-sans text-[2.2rem]'>The synergy of <span className='text-purple-700'> human expertise </span> and emerging technology allows us to deliver custom experiences that boost our client's growth.</h3>
         </div>
         <div className='col-span-2'>
 

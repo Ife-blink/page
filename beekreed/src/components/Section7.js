@@ -20,9 +20,9 @@ function Section7() {
     }
 
   return (
-    <section className='h-[100vh] w-[100%] bg-black text-white grid row-span-3'>
+    <section className='h-[100%] w-[100%] bg-black text-white grid grid-rows-10 '>
          <div 
-         className='px-[2rem] py-[2rem] flex items-center'>
+         className='px-[2rem] py-[2rem] h-[15%] flex items-center'>
          <motion.h1 
          hidden="hiddenTwo"
          animate="visibleTwo"
@@ -32,7 +32,19 @@ function Section7() {
          </motion.h1>
          </div>
          <div className='flex flex-row justify-center '>
-         {/* <div className='flex flex-row items-center'>
+         
+        <div className='relative w-[100%] h-[70vh] flex justify-center '>
+          <div className='absolute z-3 bg-green-400 p-0'>
+         <dotlottie-player
+         autoplay
+         loop
+         mode="normal"
+         src="load2.lottie"
+         style={{ height: '100%', width: '25rem', padding: 0, postion: "absolute" }}
+         ></dotlottie-player>
+         </div>
+         <div className='absolute z-5'>
+         <div className='flex flex-row items-center'>
           <h3 className='font-sans font-normal text-[2rem]'>We help</h3>
          <div className='font-sans flex flex-row justify-start h-[3rem] w-[10rem] font-normal text-[2rem]  relative overflow-hidden'>
           < motion.div 
@@ -46,22 +58,17 @@ function Section7() {
           </motion.div>
           
           </div>
-          </div> */}
-        
-         <dotlottie-player
-         autoplay
-         loop
-         mode="normal"
-         src="load2.lottie"
-         style={{ height: '100%', width: '20rem', }}
-         ></dotlottie-player>
+          </div>
+         </div>
+         {/* <div className='absolute z-0'>
          <Player
            autoplay
            loop
            src={"winners.json"}
            className="h-[100%] w-[20rem]"
          />
-         
+         </div> */}
+         </div>
          
 
          </div>
@@ -69,7 +76,7 @@ function Section7() {
          hidden="hiddenThree"
          animate="visibleThree"
          variants={flipvariant}
-         className='px-[2rem] py-[2rem] flex items-center justify-end text-end'>
+         className='px-[2rem] py-[2rem] row-span-3 flex items-center justify-end text-end'>
          <h1 className='font-sans font-normal text-[2rem]'>No bullsh<span className='text-green-500'>*</span>t. <br />
          Delivering <span className='text-green-500'>[life-changing results]</span>
          </h1>

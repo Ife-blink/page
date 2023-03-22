@@ -8,6 +8,7 @@ import Section2 from '@/components/Section2'
 import ReactPlayer from 'react-player/lazy'
 import test from '@/assets/test'
 import { motion } from 'framer-motion'
+import Header from '@/components/Header'
 import Section3 from '@/components/Section3'
 import Section4 from '@/components/Section4'
 import Section5 from '@/components/Section5'
@@ -38,26 +39,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex flex-col bg-white'>
-        <div className='w-[100%] text-black border-b-2 sticky bg-white border-[#00000005]'>
-       <div className='p-[1rem] w-[100%] flex justify-center items-center'>
-       <h1 className='border-black font-sans font-semibold px-[1rem] border-[3px]'>Beekreed</h1>
-       </div>
-       
-       </div>
+        
        {/* <Loader /> */}
-       {/* <Hero />
-       <Section1 /> */}
-       <Section6 />
-       {/* 
-      
        
-       <Section7 />
-       <Section3 />
+       {/* 
+       
+        */}
+      <Header />
+      <Hero />
+      <Section1 />
+      <Section6 />
+      <Section7 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Footer />
+       {/* 
+       
          
        
-       <Section4 />
-       <Section5 />
-       <Footer /> */}
+       
+       
+        */}
       </main>
     </>
   )

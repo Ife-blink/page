@@ -33,14 +33,14 @@ function Section6() {
         initial="hidden"
         animate="visibleFour"
         variants={picvariant}
-        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-3 ">1
+        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-3 ">
        <Image src="AnimationBlocks/pic1.svg" width={200} height={200} />
          </motion.div>
          <motion.div 
         initial="hidden"
         animate="visibleThree"
         variants={picvariant}
-        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-1 ">2
+        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-1 ">
         <Image src="AnimationBlocks/pic4.svg" width={200} height={200} />
          </motion.div>
         
@@ -48,14 +48,14 @@ function Section6() {
           initial="hidden"
           animate="visible"
          variants={picvariant}
-        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-2 ">3
+        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-2 ">
         <Image src="AnimationBlocks/pic3.svg" width={200} height={200} />
           </motion.div>
           <motion.div
           initial="hidden"
           animate="visibleFive"
          variants={picvariant}
-        className=" h-[20rem] w-[20rem] flex justify-center items-center absolute z-4 ">4
+        className=" h-[20rem] w-[20rem] flex justify-center items-center absolute z-4 ">
         <Image src="AnimationBlocks/pic5.svg" width={200} height={200} />
           </motion.div>
 
@@ -63,7 +63,7 @@ function Section6() {
         initial="hidden"
         animate="visibleTwo"
         variants={picvariant}
-        className=" h-[20rem] w-[20rem] flex justify-center items-center absolute z-0 ">5
+        className=" h-[20rem] w-[20rem] flex justify-center items-center absolute z-0 ">
        <Image src="AnimationBlocks/pic2.svg" width={200} height={200} />
          </motion.div>
        

@@ -39,26 +39,26 @@ function Hero() {
          <section className='w-[100%] max-w-screen h-[100vh] flex justify-start items-start relative'>
         
          <div className='h-[100%] w-[100%] grid grid-cols-3 grid-rows-2 gap-4 absolute z-0 '>
-          <div className='w-[4rem] h-[100%] relative'>
+          <div className='w-[4rem] h-[100%] relative sm:w-[6rem]'>
           <Image
           layout='fill'
         className="absolute flex justify-self-start"
         src='Purple.svg' />  
           </div>
           <div className=' w-[4rem] h-[100%]'></div>
-          <div className='flex justify-end p-[3rem] h-[100%] relative'>
+          <div className='flex justify-end p-[3rem] h-[100%] relative sm:p-[1rem] sm:h-[50%] sm:pr-[5%]'>
           <Image
         layout="fill"
         className="absolute flex justify-self-start"
         src='market.svg' />
           </div>
-          <div className=' p-[3rem] w-[3rem] h-[100%]'>
+          <div className=' p-[3rem] w-[3rem] h-[100%] relative sm:w-[8rem] sm:pt-[1rem]'>
           <Image
         layout="fill"
-        className="absolute flex justify-self-start sm:hidden"
+        className="absolute flex justify-self-start "
         src='design.svg' />   
           </div>
-          <div className=' h-[100%]'></div>
+          <div></div>
           <div className=' p-[3rem] h-[100%]'>
           <Image
         layout="fill"
@@ -69,7 +69,7 @@ function Hero() {
 
         <div className='h-[100%] w-[100%] absolute z-2 grid grid-cols-12 '>
         <div className=' col-span-2 sm:col-span-1'></div>
-         <div className=' col-span-8 w-[100%] h-[100%] flex items-center justify-center sm:col-span-10'>
+         <div className=' col-span-8 w-[100%] h-[100%] flex items-center justify-center sm:col-span-10 sm:items-start'>
          <div className='h-[100%] w-[100%] flex flex-col justify-center items-center'>
         <h1 className='font-sans font-bold text-[4.5rem] leading-[4.5rem] text-center text-black sm:text-[3.2rem] sm:leading-[3.1rem]'> 
       

@@ -46,32 +46,32 @@ function Hero() {
         src='Purple.svg' />  
           </div>
           <div className=' w-[4rem] h-[100%]'></div>
-          <div className='flex justify-end p-[3rem] h-[100%] relative sm:p-[1rem] sm:h-[50%] sm:pr-[5%]'>
+          <div className='flex justify-end md:p-[3rem] h-[100%] relative sm:p-[1rem] sm:h-[50%] sm:pr-[5%]'>
           <Image
         layout="fill"
         className="absolute flex justify-self-start"
         src='market.svg' />
           </div>
-          <div className=' p-[3rem] w-[3rem] h-[100%] relative sm:w-[8rem] sm:pt-[1rem]'>
+          <div className=' p-[3rem] md:w-[3rem] h-[100%] relative sm:w-[8rem] sm:pt-[1rem]'>
           <Image
         layout="fill"
         className="absolute flex justify-self-start "
         src='design.svg' />   
           </div>
           <div></div>
-          <div className=' p-[3rem] h-[100%]'>
+          <div className=' p-[3rem] h-[100%] relative sm:w-[8rem] sm:pt-[1rem]'>
           <Image
         layout="fill"
-        className="absolute  flex justify-self-start sm:hidden"
+        className="absolute  flex justify-self-start sm:mt-[1rem]"
         src='development.svg' />
           </div>
          </div>
 
         <div className='h-[100%] w-[100%] absolute z-2 grid grid-cols-12 '>
-        <div className=' col-span-2 sm:col-span-1'></div>
-         <div className=' col-span-8 w-[100%] h-[100%] flex items-center justify-center sm:col-span-10 sm:items-start'>
+        <div className=' md:col-span-2 sm:col-span-1'></div>
+         <div className=' md:col-span-8 w-[100%] h-[100%] flex items-center justify-center sm:col-span-10 sm:items-start'>
          <div className='h-[100%] w-[100%] flex flex-col justify-center items-center'>
-        <h1 className='font-sans font-bold text-[4.5rem] leading-[4.5rem] text-center text-black sm:text-[3.2rem] sm:leading-[3.1rem]'> 
+        <h1 className='font-sans font-bold md:text-[4.5rem] md:leading-[4.5rem] text-center text-black sm:text-[3.2rem] sm:leading-[3.1rem]'> 
       
        <motion.span
           initial="hidden"
@@ -107,19 +107,19 @@ function Hero() {
         initial="hiddenTwo"
         animate="visibleSix"
         variants={textvariant}
-        className='px-[20%] mt-[2rem] font-sans font-normal text-center text-[#00000095] sm:px-[0%]'>
+        className='md:px-[20%] mt-[2rem] font-sans font-normal text-center text-[#00000095] sm:px-[0%]'>
         Crafting and upgrading the next generation of web experiences. We empower our clients to refocus on the things that drive rapid and sustainable growth.
         </motion.p>
         <motion.button 
         initial="hiddenThree"
         animate="visibleSeven"
         variants={textvariant}
-        className='bg-black text-white font-sans px-[10%] py-[0.7%] mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center sm:w-[100%] sm:py-[4%]'>
+        className='bg-black text-white font-sans px-[10%] md:w-[40%] md:py-[0.7%] mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center sm:w-[100%] sm:py-[4%]'>
          <BsFillCalendarCheckFill /> <h1 className='ml-[0.7rem] sm:ml-[0.4rem]'>Let's talk shop</h1></motion.button>
          </div>
          </div>
          
-         <div className=' col-span-2 sm:col-span-1'></div>
+         <div className=' md:col-span-2 sm:col-span-1'></div>
         </div>
           
         

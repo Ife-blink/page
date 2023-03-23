@@ -4,7 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 function Section5() {
   return (
     <section className='h-[100%] w-[100%] py-[5%] bg-black px-[3%]'>
-        <div className='w-[100%] h-[50%] grid grid-cols-5 gap-1 grid-flow-row sm:flex flex-col'>
+        <div className='w-[100%] h-[50%] md:grid md:grid-cols-5 gap-1 grid-flow-row sm:flex flex-col'>
         <div className='bg-[#29292e] col-span-2 '>
         <div className=' grid h-[100%] grid-cols-10 grid-flow-row'>
           <div className='col-span-9 h-[100%] p-[5%] grid items-stretch'>
@@ -36,15 +36,15 @@ function Section5() {
 
          </div>
          <div className='px-[5%] pt-[2rem]'>
-         <h2 className='font-sans font-semibold text-[6rem] leading-[2rem] text-white sm:text-[4rem]'>project</h2>
+         <h2 className='font-sans font-semibold md:text-[6rem] leading-[2rem] text-white sm:text-[4rem]'>project</h2>
          </div>
          <div className=''>
          </div>
          <div className='w-[100%] h-[100%] flex items-end '>
          <div className='w-[100px] h-[50px]  bg-purple-800'></div>
          </div>
-         <div className='w-[100%] flex justify-end px-[5%] sm: mt-[1rem]'>
-         <h2 className='font-sans font-semibold text-[6rem] leading-[2rem] text-white sm:text-[4rem]'>inquiry</h2>
+         <div className='w-[100%] flex justify-end px-[5%] md:mt-0 sm:mt-[1rem]'>
+         <h2 className='font-sans font-semibold md:text-[6rem] leading-[2rem] text-white sm:text-[4rem]'>inquiry</h2>
          </div>
          </div>
         </div>

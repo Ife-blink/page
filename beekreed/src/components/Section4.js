@@ -2,9 +2,9 @@ import React from 'react'
 
 function Section4() {
   return (
-    <section className=' w-[100%] bg-black py-[3%] px-[3%]'>
-        <h3 className='font-sans font-semibold text-white mb-[3rem] text-[5rem]'>the latest.</h3>
-        <div className='grid grid-cols-3 gap-10'>
+    <section className=' w-[100%] bg-black py-[3%] pb-[5%] px-[3%]'>
+        <h3 className='font-sans font-semibold text-white mb-[3rem] text-[5rem] sm:text-[3rem] sm:mb-[2rem] '>the latest.</h3>
+        <div className='grid grid-cols-3 gap-10 sm:flex flex-col'>
         <div className='col-span-1 h-[20rem] w-[100%] bg-white'>
         </div>
         <div className='h-[100%] w-[100%] col-span-2'>

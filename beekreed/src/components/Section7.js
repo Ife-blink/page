@@ -37,18 +37,18 @@ function Section7() {
   return (
     <section className='h-[100%] w-[100%] bg-black text-white grid grid-rows-10 '>
          <div 
-         className='px-[2rem] py-[2rem] h-[15%] flex items-center'>
+         className='px-[2rem] py-[2rem] flex items-center'>
          <motion.h1 
          hidden="hiddenTwo"
          animate="visibleTwo"
          variants={flipvariant}
-         className='font-sans font-normal text-[2rem]'>No bullish<span className='text-purple-500'>*</span>t. <br />
+         className='font-sans font-normal text-[2rem] sm:text-[1.8rem]'>No bullish<span className='text-purple-500'>*</span>t. <br />
          Delivering <span className='text-purple-500'>[life-changing results]</span>
          </motion.h1>
          </div>
          <div className='flex flex-row justify-center '>
          
-        <div className='relative w-[100%] h-[70vh] flex justify-center '>
+        <div className='relative w-[100%] h-[70vh] flex justify-center sm:h-[50vh] '>
           <div
           // hidden="hiddenTwo"
           // animate="visibleTwo"
@@ -97,7 +97,7 @@ function Section7() {
          </div>
          <div 
          
-         className='px-[2rem] py-[2rem] row-span-3 flex items-center justify-center text-end'>
+         className='px-[2rem] py-[2rem] row-span-3 flex  justify-center text-center'>
          <h1 className='font-sans font-normal text-[2rem]'>Grow
          </h1>
          </div>

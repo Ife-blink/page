@@ -25,7 +25,7 @@ function Section6() {
       }
 
   return (
-    <section className='h-[100vh] w-[100%] bg-black text-white'>
+    <section className='h-[100vh] w-[100%] bg-black py-[10%] text-white'>
 
       
       <div className="w-[100%] h-[80%] py-[5%] overflow-hidden relative bg-purple-600 flex justify-center items-center">
@@ -48,7 +48,7 @@ function Section6() {
           initial="hidden"
           animate="visible"
          variants={picvariant}
-        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-2 ">
+        className=" absolute h-[20rem] w-[20rem] flex justify-center items-center z-2 sm:h-[10rem]">
         <Image src="AnimationBlocks/pic3.svg" width={200} height={200} />
           </motion.div>
           <motion.div
@@ -70,10 +70,10 @@ function Section6() {
       </div>
 
         <div className="h-[20%] flex items-center flex-col justify-center text-center">
-          <h2 className="font-sans font-semibold text-3xl text-white">
+          <h2 className="font-sans font-semibold text-3xl text-white px-[5%] sm:text-[1.8rem]">
             Collaborative tools to design user experience
           </h2>
-          <p className="font-sans font-normal text-gray-500">
+          <p className="font-sans font-normal text-[#ffffff70] px-[5%] sm:mt-[1rem]">
             Use our tools to explore your ideas and make your vision come true. Then share your work easily.
           </p>
         </div>

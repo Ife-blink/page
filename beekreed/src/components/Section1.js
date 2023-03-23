@@ -9,11 +9,7 @@ function Section1() {
     import ('@dotlottie/player-component')
   })
 
-  const Partner = ({logo}) => {
-     return <div className='w-[12rem] h-[100%] bg-white border-[1px] border-purple-600 '>
-     {logo}
-   </div>
-  }
+ 
   return (
     <section className='grid grid-cols-6 grid-row-3'>
       
@@ -24,16 +20,16 @@ function Section1() {
           <Image src="logo/logo3.svg" width={150} height={150} />
           <Image src="logo/logo4.svg" width={150} height={150} />
           <Image src="logo/logo5.svg" width={150} height={150} />
-        {/* {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((pop) => {return <Partner logo={pop.logo} />})} */}
+        
         </div>
        </div>
-        <div className='col-span-4 pl-[5%] '>
-        <h3 className='font-sans font-medium text-[2.2rem]'>"The synergy of <span className='text-purple-700'> human expertise </span> and emerging technology allows us to deliver custom experiences that boost our client's growth."</h3>
+        <div className='col-span-4 pl-[5%] text-black'>
+        <h3 className='font-sans font-medium text-[2.2rem] sm:text-[1.4rem]'>"The synergy of <span className='text-purple-700'> human expertise </span> and emerging technology allows us to deliver custom experiences that boost our client's growth."</h3>
         </div>
         <div className='col-span-2'>
 
         </div>
-        <div className='col-span-3 flex justify-center'>
+        <div className='col-span-3 flex justify-center sm:hidden'>
         <dotlottie-player
         autoplay
         loop
@@ -43,8 +39,8 @@ function Section1() {
         >
 </dotlottie-player>
         </div>
-        <div className='col-span-3 mt-[3rem] flex '>
-        <div className='w-[20rem] h-[17rem] flex flex-col justify-between text-white mr-[1rem] py-[4%] px-[5%] bg-black'>
+        <div className='col-span-3 mt-[3rem] flex sm:col-span-6 overflow-auto'>
+        <div className='w-[20rem] h-[17rem] flex flex-col justify-between text-white mr-[1rem] py-[4%] px-[5%] bg-black sm:w-[60rem]'>
           <div className='flex flex-row items-center justify-between'>
           <div className='flex flex-col'>
           <h1 className='font-semibold font-sans text-[1.5rem] '>FX</h1>
@@ -54,7 +50,7 @@ function Section1() {
           </div>
           <p className='font-normal font-sans mt-[1rem]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada cursus hac sit sem enim, euismod. Libero lectus</p> 
         </div>
-        <div className='w-[20rem] h-[17rem] flex flex-col justify-between text-white mr-[1rem] py-[4%] px-[5%] bg-black'>
+        <div className='w-[20rem] h-[17rem] flex flex-col justify-between text-white mr-[1rem] py-[4%] px-[5%] bg-black sm:w-[60rem]'>
           <div className='flex flex-row items-center justify-between'>
           <div className='flex flex-col'>
           <h1 className='font-semibold font-sans text-[1.5rem] '>FX</h1>

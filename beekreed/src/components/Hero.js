@@ -39,43 +39,39 @@ function Hero() {
          <section className='w-[100%] max-w-screen h-[100vh] flex justify-start items-start relative'>
         
          <div className='h-[100%] w-[100%] grid grid-cols-3 grid-rows-2 gap-4 absolute z-0 '>
-          <div className='w-[4rem] h-[100%]'>
+          <div className='w-[4rem] h-[100%] relative'>
           <Image
-        height={200}
-        width={200}
+          layout='fill'
         className="absolute flex justify-self-start"
         src='Purple.svg' />  
           </div>
           <div className=' w-[4rem] h-[100%]'></div>
-          <div className='flex justify-end p-[3rem] h-[100%]'>
+          <div className='flex justify-end p-[3rem] h-[100%] relative'>
           <Image
-        height={200}
-        width={200}
+        layout="fill"
         className="absolute flex justify-self-start"
         src='market.svg' />
           </div>
-          <div className=' p-[3rem] h-[100%]'>
+          <div className=' p-[3rem] w-[3rem] h-[100%]'>
           <Image
-        height={200}
-        width={200}
-        className="absolute flex justify-self-start"
+        layout="fill"
+        className="absolute flex justify-self-start sm:hidden"
         src='design.svg' />   
           </div>
           <div className=' h-[100%]'></div>
           <div className=' p-[3rem] h-[100%]'>
           <Image
-        height={200}
-        width={200}
-        className="absolute  flex justify-self-start"
+        layout="fill"
+        className="absolute  flex justify-self-start sm:hidden"
         src='development.svg' />
           </div>
          </div>
 
         <div className='h-[100%] w-[100%] absolute z-2 grid grid-cols-12 '>
-        <div className=' col-span-2'></div>
-         <div className='bg-blac col-span-8 w-[100%] h-[100%]'>
+        <div className=' col-span-2 sm:col-span-1'></div>
+         <div className=' col-span-8 w-[100%] h-[100%] flex items-center justify-center sm:col-span-10'>
          <div className='h-[100%] w-[100%] flex flex-col justify-center items-center'>
-        <h1 className='font-sans font-bold text-[4.5rem] leading-[4.5rem] text-center text-black sm:text-[3.6rem] sm:leading-[3.1rem]'> 
+        <h1 className='font-sans font-bold text-[4.5rem] leading-[4.5rem] text-center text-black sm:text-[3.2rem] sm:leading-[3.1rem]'> 
       
        <motion.span
           initial="hidden"
@@ -100,13 +96,13 @@ function Hero() {
         variants={textvariant}
         >
         people
-        </motion.span>
-        <motion.span
-        initial="hidden"
+        </motion.span> <motion.span
+          initial="hidden"
         animate="visibleFive"
         variants={textvariant}
-        className="inline-block ml-[3rem]"
-        > to feel engaged</motion.span></h1>
+        className="inline-block "
+        > feel</motion.span>
+        </h1>
         <motion.p 
         initial="hiddenTwo"
         animate="visibleSix"
@@ -118,12 +114,12 @@ function Hero() {
         initial="hiddenThree"
         animate="visibleSeven"
         variants={textvariant}
-        className='bg-black text-white font-sans px-[10%] py-[0.7%] mt-[1.5rem] rounded-[5px] flex flex-row items-center sm:w-[100%] sm:py-[4%]'>
+        className='bg-black text-white font-sans px-[10%] py-[0.7%] mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center sm:w-[100%] sm:py-[4%]'>
          <BsFillCalendarCheckFill /> <h1 className='ml-[0.7rem] sm:ml-[0.4rem]'>Let's talk shop</h1></motion.button>
          </div>
          </div>
          
-         <div className=' col-span-2'></div>
+         <div className=' col-span-2 sm:col-span-1'></div>
         </div>
           
         

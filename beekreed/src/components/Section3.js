@@ -11,8 +11,8 @@ function Section3() {
   })
 
   return (
-    <section className='w-[100%] justify-items-center bg-[#7c0eca] md:grid grid-cols-2 flex flex-col-reverse'>
-       <div className='grid grid-row-2 h-[100%] text-white px-[5%] '>
+    <section className='w-[100%] justify-items-center bg-[#7c0eca]  flex flex-col-reverse'>
+       <div className=' h-[100%] text-white px-[5%] '>
        <Setion3util name={"About Beekreed"}
         number={'01'} desc={"Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize."}
        />

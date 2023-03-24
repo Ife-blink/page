@@ -20,7 +20,12 @@ function Section3() {
        <p className='font-sans font-light mt-3 mb-10'>Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize.</p>
       </div>
        <div className='h-[100%] p-4 bg-black w-[100%] flex justify-center items-center sm: object-cover sm:h-[50%]'>
-       <Image width={4000} height={5000} src='/mailchimp.jpg'/>
+       <Player
+           autoplay
+           loop
+           src={"winners.json"}
+           className="h-[100%] w-[20rem]"
+         />
        </div>
       </section>
   )

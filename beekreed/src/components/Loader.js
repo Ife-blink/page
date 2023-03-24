@@ -51,7 +51,7 @@ function Loader() {
     </div>
       
     <div className='h-[100%] absolute z-1 flex items-center justify-center'>
-    <h1 className=''>{names[currentIndex]}</h1> 
+    <h1 className='text-[3rem]'>{names[currentIndex]}</h1> 
     </div>
     
      

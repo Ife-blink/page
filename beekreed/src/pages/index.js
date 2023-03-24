@@ -15,18 +15,25 @@ import Section5 from '@/components/Section5'
 import Section6 from '@/components/Section6'
 import Section7 from '@/components/Section7'
 import Footer from '@/components/Footer'
+import Hero1 from '@/components/Hero1'
 import Loader from '@/components/Loader'
 import { Player } from '@lottiefiles/react-lottie-player'
 
 
 
+
 export default function Home() {
+ const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     import ('@dotlottie/player-component')
   })
-
   
+  useEffect(()=> {
+    setTimeout(() => {
+      setLoading(false);
+    }, 7000);
+  })
 
  
 
@@ -38,15 +45,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex flex-col bg-white'>
+      <main className='flex flex-col h-[100%] bg-white'>
         
-       {/* <Loader /> */}
-       
-       {/* 
-       
-        */}
+       {loading ? <Loader /> : (
+        <>
       <Header />
-      <Hero />
+      <Hero1 />
       <Section1 />
       <Section6 />
       <Section7 />
@@ -54,13 +58,17 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Footer />
+      </>
+       )}
+       
+      
        {/* 
        
          
-       
-       
-       
         */}
+       
+       
+      
       </main>
     </>
   )

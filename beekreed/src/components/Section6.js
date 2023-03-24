@@ -25,10 +25,10 @@ function Section6() {
       }
 
   return (
-    <section className='md:h-[100vh] sm:h-[70vh] w-[100%] bg-black pb-[10%] text-white'>
+    <section className=' w-[100%] bg-black pb-[10%] text-white'>
 
       
-      <div className="w-[100%] sm:h-[40%] md:h-[70%] py-[5%] overflow-hidden relative bg-purple-600 flex justify-center items-center">
+      <div className="w-[100%] h-[50vh] py-[5%] overflow-hidden relative bg-purple-600 flex justify-center items-center">
       <motion.div 
         initial="hidden"
         animate="visibleFour"
@@ -69,7 +69,8 @@ function Section6() {
        
       </div>
 
-        <div className=" py-[10%] flex items-center flex-col justify-center text-center">
+        <div className=" py-[10%] flex items-center flex-col justify-start text-center">
+        <h3 className='font-mono text-purple-600 font-medium text-center '>Introducing</h3>
           <h2 className="font-sans font-semibold text-3xl text-white px-[5%] sm:text-[1.8rem]">
             Collaborative tools to design user experience
           </h2>

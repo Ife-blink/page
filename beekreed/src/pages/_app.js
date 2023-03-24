@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import localFont from '@next/font/local'
+import { Space_Mono } from 'next/font/google'
 
 const generalsans = localFont({
   src: [
@@ -33,5 +34,11 @@ const generalsans = localFont({
   variable: '--font-general'
 })
 
+const spc_mono = Space_Mono({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-mono',
+})
+
 export default function App({ Component, pageProps }) {
-  return <main className={`${generalsans.variable}`}> <Component {...pageProps} /> </main> }
+  return <main className={`${generalsans.variable} ${spc_mono.variable}`}> <Component {...pageProps} /> </main> }

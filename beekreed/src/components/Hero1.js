@@ -1,9 +1,15 @@
 import React from 'react'
-import Router from 'next/router';
+import { useRouter } from 'next/router'
 import { BsFillCalendarCheckFill } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 
 function Hero1() {
+
+  const router = useRouter()
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(`https://calendly.com/officialbeekreed/30min`)
+  }
 
   const textvariant = {
     hidden: { opacity: 0, y: "1rem"},
@@ -78,6 +84,7 @@ function Hero1() {
         initial="hiddenThree"
         animate="visibleSeven"
         variants={textvariant}
+        onClick={handleClick}
         className='bg-white text-black font-sans px-[10%] md:w-[40%] md:py-[0.7%] mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center sm:w-[100%] sm:py-[4%]'>
          <BsFillCalendarCheckFill /> <h1 className='ml-[0.7rem] font-medium sm:ml-[0.4rem]'>Let's talk shop</h1></motion.button>
     

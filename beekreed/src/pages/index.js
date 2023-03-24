@@ -32,7 +32,7 @@ export default function Home() {
   useEffect(()=> {
     setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 7800);
   })
 
  
@@ -46,7 +46,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex flex-col h-[100%] bg-white'>
-        
+      
        {loading ? <Loader /> : (
         <>
       <Header />

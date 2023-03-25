@@ -15,7 +15,7 @@ function Section5() {
         <p className='font-sans font-light text-[0.8rem] pr-[50%] text-[#ffffff90]'>Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize</p>
         </div>
         <div className='h-[50px] w-[100%] flex justify-center items-center bg-white border-[3px] border-[#29292e]'>
-          <BsArrowRight />
+          <BsArrowRight color='#000000' />
         </div>
         </div>
         </div>
@@ -26,7 +26,7 @@ function Section5() {
          </div>
          <div className='w-[100%] h-[100%]  flex justify-end'>
          <div className='h-[50px] w-[50px] flex justify-center items-center bg-white border-purple-700 border-[2px] '>
-          <BsArrowRight />
+          <BsArrowRight color='#000000' />
          </div>
          </div>
          <div className='px-[5%] '>

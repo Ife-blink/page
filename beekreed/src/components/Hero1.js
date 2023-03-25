@@ -36,13 +36,21 @@ function Hero1() {
     visibleSeven: {y: 0, opacity: 1,
       transition:{ duration: 1, delay: 1.8}
     },
+    hiddenFour: { opacity: 0, y: "-1rem"},
+    visibleEight: {y: 0, opacity: 1,
+      transition:{ duration: 1, delay: 1.5}
+    },
     
   }
 
   return (
-    <div className='font-sans p-5 text-white h-[100%] py-[20%] flex flex-col justify-center items-center bg-black md:px-[10%]'>
-        <h3 className='font-mono text-purple-600 font-medium text-center '>Introducing</h3>
-        <h1 className='items-center justify center font-semibold md:mt-3 text-center md:leading-[4rem] text-[2rem] md:text-[3.2rem]'>
+    <div className='font-sans p-5 text-white h-[100%] py-[20%] xl:py-[10%] flex flex-col justify-center items-center bg-black md:px-[10%]'>
+        <motion.h3
+        initial="hiddenFour"
+        animate="visibleEight"
+        variants={textvariant}
+        className='font-mono text-purple-600 font-medium text-center '>Introducing</motion.h3>
+        <h1 className='items-center justify center font-semibold md:mt-3 text-center xl:text-[4rem] md:leading-[4rem] text-[2rem] md:text-[3.2rem]'>
         <motion.span
           initial="hidden"
           animate="visible"
@@ -53,8 +61,7 @@ function Hero1() {
           animate="visibleTwo"
           variants={textvariant}
           className="inline-block"
-        >experiences</motion.span>
-         <motion.span
+        >experiences</motion.span> <motion.span
          initial="hidden"
          animate="visibleThree"
          variants={textvariant}
@@ -77,7 +84,7 @@ function Hero1() {
         initial="hiddenTwo"
         animate="visibleSix"
         variants={textvariant} 
-        className='text-gray-400 px-1 mt-3 text-[1rem] text-center'>
+        className='text-gray-400 px-1 mt-3 text-[1rem] text-center xl:text-[1.5rem] xl:px-[10%] xl:mt-8'>
          We empower our clients to refocus on the things that drive rapid and sustainable growth.
         </motion.p>
         <motion.button 

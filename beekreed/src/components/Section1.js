@@ -17,7 +17,7 @@ function Section1() {
   })
 
   useEffect(() => {
-    if (isInView == true ) {
+    if (isInView) {
       const opacityvariant = {
         hidden: { opacity: 1, y: 0},
         visible: {y: 0, opacity: 0,
@@ -56,18 +56,18 @@ function Section1() {
        </div> */}
 
         <div className='col-span-4 w-[100%] px-4 py-8 text-black'>
-        <h3 className='font-mono mb-3 text-purple-600'>Talk to us</h3>
+        <h3 className='font-mono mb-3 text-purple-600 xl:text-[2rem] xl:pl-[1%]'>Talk to us</h3>
         <motion.h3
         initial="hiddenThree"
         animate="visibleThree"
-        ref={ref} className='font-sans font-medium text-[1.4rem]'>
+        ref={ref} className='font-sans font-medium text-[1.4rem] xl:text-[3rem] xl:pl-[1%] xl:pr-[20%]'>
           The synergy of <span className='text-purple-700'> human expertise </span> and emerging technology allows us to deliver custom experiences that boost our client's growth.</motion.h3>
         </div>
 
         
         
-        <div className='mt-[3rem]  flex justify-center flex-wrap overflow-auto'>
-        <div className='w-[20rem] h-[13rem] flex flex-col items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem]'>
+        <div className='mt-[3rem] flex justify-center flex-wrap xl:flex-row overflow-auto'>
+        <div className='w-[20rem] h-[20rem] flex flex-col items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem] '>
         <DynamicTweet
     author={{
       name: 'hatsune mitski (zeph)',
@@ -83,7 +83,7 @@ function Section1() {
     fitInsideContainer
     theme="dim" 
   /></div>
-        <div className='w-[20rem] h-[13rem] flex flex-col justify-between text-white py-[4%] px-[5%] sm:w-[60rem]'>
+        <div className='w-[20rem] h-[20rem] flex flex-col justify-between text-white py-[4%] px-[5%] sm:w-[60rem]'>
         <DynamicTweet
     author={{
       name: 'hatsune mitski (zeph)',

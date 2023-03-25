@@ -11,12 +11,12 @@ function Section3() {
   })
 
   return (
-    <section className='w-[100%] justify-items-center bg-[#7c0eca]  flex flex-col-reverse'>
-       <div className=' h-[100%] text-white px-[5%] '>
+    <section className='w-[100%] justify-items-center bg-[#7c0eca]  flex flex-col-reverse '>
+       <div className=' h-[100%] text-white px-[5%] xl:py-[5%]'>
        <Setion3util name={"About Beekreed"}
         number={'01'} desc={"Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize."}
        />
-       <h3 className='font-sans mt-4 font-semibold text-[1.5rem]'>So why Beekreed</h3>
+       <h3 className='font-sans mt-4 font-semibold text-[1.5rem] lg:mt-8'>So why Beekreed</h3>
        <p className='font-sans font-light mt-3 mb-10'>Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize.</p>
       </div>
        <div className='h-[100%] p-4 bg-black w-[100%] flex justify-center items-center sm: object-cover sm:h-[50%]'>
@@ -24,7 +24,7 @@ function Section3() {
            autoplay
            loop
            src={"winners.json"}
-           className="h-[100%] w-[20rem]"
+           className="h-[100%] w-[20rem] xl:w-[30rem]"
          />
        </div>
       </section>

@@ -38,10 +38,13 @@ function Section7() {
   return (
     <section className='h-[100%] w-[100%] bg-[#90DAF9] text-white  '>
         
-         <div className='px-4 py-8'>
-          <h3 className='font-mono mb-3 text-[#1652f0] lg:text-[2rem] xl:pl-[1%]'>Talk to us</h3>
-         <h1 className='text-black font-sans text-left leading-[2.5rem] text-[2rem] font-semibold lg:text-[3rem] xl:leading-[3.5rem] xl:pl-[1%] xl:pr-[50%]'>
+         <div className='px-[5%] py-8'>
+          <h3 className='font-mono mb-3 text-[#1652f0] lg:text-[1.5rem] '>Talk to us</h3>
+         <h1 className='text-black font-sans text-left leading-[2.5rem] text-[2rem] font-semibold lg:text-[3rem] xl:leading-[3.5rem]   xl:pr-[50%]'>
           Take control of your drop with scheduling.</h1>
+          <p className="font-sans text-black font-normal text-[#ffffff70] mt-4 xl:text-[1.5rem]">
+            Use our tools to explore your ideas and make your vision come true. Then share your work easily.
+          </p>
          </div>
          
          <div className='h-[100%]  bg-[#90DAF9] flex justify-center w-[100%]'>

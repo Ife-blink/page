@@ -2,7 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 import { FaTwitterSquare } from 'react-icons/fa'
-import { motion, useInView } from 'framer-motion'
+import { motion, useScroll,
+  useMotionValueEvent,
+  useInView, 
+  useAnimationControls,
+  delay } from "framer-motion";
 import dynamic from 'next/dynamic'
 
 function Section1() {
@@ -15,30 +19,30 @@ function Section1() {
   useEffect(() => {
     import ('@dotlottie/player-component')
   })
-
-  useEffect(() => {
-    if (isInView) {
-      const opacityvariant = {
-        hidden: { opacity: 1, y: 0},
-        visible: {y: 0, opacity: 0,
-          transition:{ duration: 0.2, delay: 4 }
-        },
-        hiddenTwo: {opacity: 0 },
-        visibleTwo: { opacity: 0,
-          transition:{ duration: 0.2, repeat: Infinity }
-        },
-        hiddenThree: { opacity: 0.3, y:0, x: "3rem"},
-        visibleThree: {x: "-3rem", opacity: [0.5,1],
-          transition:{ duration: 2, repeat: Infinity }
-      }
-    }
-    }
-  })
-
   
 
   const ref = useRef(null)
   const isInView = useInView(ref)
+  const animation = useAnimationControls()
+
+  useEffect(() => {
+
+    
+    if(isInView) {
+     animation.set({ x: 20, opacity: 0})
+     animation.start({x: 0, opacity: 1,
+      transition: {
+        duration: 1 
+      }
+    })
+    
+    }
+  console.log('in view ?'+ isInView)
+
+  }, [isInView])
+  
+
+ 
  
  
   return (
@@ -55,18 +59,18 @@ function Section1() {
         </div>
        </div> */}
 
-        <div className='col-span-4 w-[100%] px-4 py-8 text-black'>
+        <div className='col-span-4 w-[100%] px-[5%] py-8 text-black'>
         <h3 className='font-mono mb-3 text-purple-600 xl:text-[2rem] xl:pl-[1%]'>Talk to us</h3>
         <motion.h3
         initial="hiddenThree"
-        animate="visibleThree"
+        animate={animation}
         ref={ref} className='font-sans font-medium text-[1.4rem] xl:text-[3rem] xl:pl-[1%] xl:pr-[20%]'>
           The synergy of <span className='text-purple-700'> human expertise </span> and emerging technology allows us to deliver custom experiences that boost our client's growth.</motion.h3>
         </div>
 
         
         
-        <div className='mt-[3rem] flex justify-center flex-wrap xl:flex-row overflow-auto'>
+        <div className='mt-[3rem] flex justify-center flex-wrap lg:flex-row   overflow-auto'>
         <div className='w-[20rem] h-[20rem] flex flex-col items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem] '>
         <DynamicTweet
     author={{

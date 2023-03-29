@@ -87,13 +87,16 @@ function Hero1() {
         className='text-gray-400 px-1 mt-3 text-[1rem] text-center xl:text-[1.5rem] xl:px-[10%] xl:mt-8'>
          We empower our clients to refocus on the things that drive rapid and sustainable growth.
         </motion.p>
-        <motion.button 
+        <motion.div 
         initial="hiddenThree"
         animate="visibleSeven"
         variants={textvariant}
         onClick={handleClick}
-        className='bg-white text-black font-sans px-[10%] md:w-[40%] md:py-[0.7%] mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center sm:w-[100%] sm:py-[4%]'>
-         <BsFillCalendarCheckFill /> <h1 className='ml-[0.7rem] font-medium sm:ml-[0.4rem]'>Let's talk shop</h1></motion.button>
+        className='mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center '>
+         <button className='bg-purple-600 rounded-[0.1rem] flex justify-center items-center mr-3  px-4 py-3'>Learn more </button>
+         <button className='border-purple-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Talk to us </button>
+         
+         </motion.div>
     
         
     </div>

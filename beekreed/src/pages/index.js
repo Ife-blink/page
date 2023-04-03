@@ -81,7 +81,7 @@ export default function Home({post}) {
   )
 }
 
-const client = createClient({
+export const client = createClient({
   projectId: "btynjh54",
   dataset: "production",
   apiVersion: "2023-04-03",

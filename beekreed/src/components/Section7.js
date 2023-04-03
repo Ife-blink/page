@@ -15,7 +15,7 @@ function Section7() {
   const textanimation = useAnimationControls()
 
   useEffect(() => {
-
+    
     
     if(isInView) {
      textanimation.set({ y: -20, opacity: 0})
@@ -33,7 +33,7 @@ function Section7() {
     
     }
  
-
+  console.log(isInView)
   }, [isInView])
 
   return (
@@ -41,13 +41,18 @@ function Section7() {
         
          <div className='px-[5%] py-8'>
           <motion.h3
+          ref={ref}
           animation={textanimation}
           className='font-mono mb-3 text-[#1652f0] lg:text-[1.5rem] '>Talk to us</motion.h3>
-         <h1 className='text-black font-sans text-left leading-[2.5rem] text-[2rem] font-semibold lg:text-[3rem] xl:leading-[3.5rem]   xl:pr-[50%]'>
-          Take control of your drop with scheduling.</h1>
-          <p className="font-sans text-black font-normal xl:pr-[40%] text-[#ffffff70] mt-4 xl:text-[1.5rem]">
+         <motion.h1 
+         animation={animation}
+         className='text-black font-sans text-left leading-[2.5rem] text-[2rem] font-semibold lg:text-[3rem] xl:leading-[3.5rem]   xl:pr-[50%]'>
+          Take control of your drop with scheduling.</motion.h1>
+          <motion.p 
+          animation={textanimation}
+          className="font-sans text-black font-normal xl:pr-[40%] text-[#ffffff70] mt-4 xl:text-[1.5rem]">
             Use our tools to explore your ideas and make your vision come true. Then share your work easily.
-          </p>
+          </motion.p>
          </div>
          
          <div className='h-[100%]  bg-[#90DAF9] flex justify-center w-[100%]'>

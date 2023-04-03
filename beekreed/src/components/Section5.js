@@ -1,7 +1,15 @@
 import React from 'react'
+import { useRouter } from 'next/router';
 import { BsArrowRight } from 'react-icons/bs';
 
 function Section5() {
+
+  const router = useRouter()
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(`https://calendly.com/officialbeekreed/30min`)
+  }
+
   return (
     <section className='h-[100%] w-[100%] py-[5%] bg-black px-[3%]'>
         <div className='w-[100%] h-[50%] md:grid md:grid-cols-5 gap-1 grid-flow-row sm:flex flex-col'>
@@ -25,7 +33,9 @@ function Section5() {
          <h3 className='font-sans font-light text-[0.8rem] text-[#ffffff90]'>Get in touch</h3>
          </div>
          <div className='w-[100%] h-[100%]  flex justify-end'>
-         <div className='h-[50px] w-[50px] flex justify-center items-center bg-white border-purple-700 border-[2px] '>
+         <div 
+         onClick={handleClick}
+         className='h-[50px] w-[50px] flex justify-center items-center bg-white border-purple-700 border-[2px] '>
           <BsArrowRight color='#000000' />
          </div>
          </div>

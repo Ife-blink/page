@@ -91,10 +91,10 @@ function Hero1() {
         initial="hiddenThree"
         animate="visibleSeven"
         variants={textvariant}
-        onClick={handleClick}
+        
         className='mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center '>
          <button className='bg-purple-600 rounded-[0.1rem] flex justify-center items-center mr-3  px-4 py-3'>Learn more </button>
-         <button className='border-purple-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Talk to us </button>
+         <button onClick={handleClick} className='border-purple-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Talk to us </button>
          
          </motion.div>
     

@@ -16,8 +16,8 @@ function Section3() {
        <Setion3util name={"About Beekreed"}
         number={'01'} desc={"Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize."}
        />
-       <h3 className='font-sans mt-4 font-semibold text-[1.5rem] lg:mt-8'>So why Beekreed</h3>
-       <p className='font-sans font-light mt-3 mb-10'>Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize.</p>
+       <h3 className='font-sans mt-4 font-semibold text-[1.5rem] xl:text-[2rem] lg:mt-8'>So why Beekreed</h3>
+       <p className='font-sans font-light xl:text-[1.5rem] mt-3 mb-10'>Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize.</p>
       </div>
        <div className='h-[100%] p-4 bg-black w-[100%] flex justify-center items-center sm: object-cover sm:h-[50%]'>
        <Player

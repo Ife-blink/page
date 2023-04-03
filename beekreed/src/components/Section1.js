@@ -54,35 +54,6 @@ function Section1() {
   console.log('in view ?'+ isInView)
 
   }, [isInView])
-
-  useEffect(() => {
-    
-    if(isInView1) {
-      animationOne.set({ y: 20, opacity: 0})
-      animationOne.start({y: 0, opacity: 1,
-      transition: {
-        duration: 1 , delay: 0.5
-      }
-    })
-    
-    }
-  
-
-  }, [isInView1])
-  
-  useEffect(() => {
-    
-    if(isInView2) {
-      animationOne.set({ y: 20, opacity: 0})
-      animationOne.start({y: 0, opacity: 1,
-      transition: {
-        duration: 1 , delay: 0.5
-      }
-    })
-    
-    }
-
-  }, [isInView2])
  
  
  

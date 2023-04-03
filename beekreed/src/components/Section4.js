@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import createImageUrlBuilder from '@sanity/image-url'
+import { useRouter } from 'next/router'
 import { client } from '@/pages'
 
 
@@ -19,6 +20,13 @@ export const urlForImage = (source) =>
 
 function Section4({ post }) {
   console.log(post)
+
+  const router = useRouter()
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(`https://calendly.com/officialbeekreed/30min`)
+  }
+
   return (
     <section className=' w-[100%] text-white h-[100%] bg-black py-[3%] pb-8 px-[3%]'>
         <h3 className='font-sans font-semibold text-white md:mb-[3rem] md:text-[5rem] sm:text-[3rem] sm:mb-[2rem] '>the latest.</h3>

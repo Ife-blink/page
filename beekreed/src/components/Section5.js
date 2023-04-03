@@ -14,8 +14,8 @@ function Section5() {
         </>
         <p className='font-sans font-light text-[0.8rem] pr-[50%] text-[#ffffff90]'>Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize</p>
         </div>
-        <div className='h-[50px] w-[100%] flex justify-center items-center bg-white border-[3px] border-[#29292e]'>
-          <BsArrowRight color='#000000' />
+        <div className='h-[50px] w-[100%] flex justify-center items-center  border-[3px] border-[#29292e]'>
+          
         </div>
         </div>
         </div>

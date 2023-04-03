@@ -23,11 +23,10 @@ function Section4({ post }) {
     <section className=' w-[100%] text-white h-[100%] bg-black py-[3%] pb-8 px-[3%]'>
         <h3 className='font-sans font-semibold text-white md:mb-[3rem] md:text-[5rem] sm:text-[3rem] sm:mb-[2rem] '>the latest.</h3>
         <div className='md:grid grid-cols-3 md:grid-flow-row gap-10 sm:flex flex-col'>
-        <div className='col-span-1 h-[20rem] w-[100%] bg-white'>
+        <div className='col-span-1 h-[20rem] relative w-[100%] bg-white'>
           <Image
-          width={1600}
-          height={800}
-          className="object-cover"
+          fill
+          style={{objectFit:"cover"}}
           src={urlForImage(post[0].coverImage?.asset?._ref).height(1000).width(2000).url()}
           />
         </div>
@@ -49,7 +48,11 @@ function Section4({ post }) {
          </div>
          </div>
         </div>
-         
+         <div className='font-sans text-[#ac41f8] font-semibold'>
+          <h1>
+           See more
+          </h1>
+         </div>
       </section>
   )
 }

@@ -52,9 +52,9 @@ export default function Home() {
       
        {/* {loading ? <Loader /> : (
         <> */}
-      <Header />
+      <Header open={() => setOpen(!open)} />
       <Hero1 />
-      {/* <Overlay /> */}
+      { open? <Overlay /> : null }
       <Section1 />
       <Section6 />
       <Section7 />

@@ -21,10 +21,12 @@ import Hero1 from '@/components/Hero1'
 import Loader from '@/components/Loader'
 import { Player } from '@lottiefiles/react-lottie-player'
 
+import { createClient } from "next-sanity";
 
 
 
-export default function Home() {
+
+export default function Home({post}) {
  const [loading, setLoading] = useState(true)
  const [open, setOpen] = useState(false)
 
@@ -58,9 +60,9 @@ export default function Home() {
       <Section1 />
       <Section6 />
       <Section7 />
-      <Sectionteam />
+      
       <Section3 />
-      <Section4 />
+      <Section4 post={post} />
       <Section5 />
       <Footer />
       {/* </>
@@ -77,4 +79,36 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+const client = createClient({
+  projectId: "btynjh54",
+  dataset: "production",
+  apiVersion: "2023-04-03",
+  useCdn: false,
+  token: "sk2xzUUXgX6faoPOe5zLKKGjpGXvtbbazWi8iWOWhWqfejLeoAEDOx4YCqmjv9KmHjAve6UamPknIlZY8w2Bdkb8KhD7uD5Qt5GeczS0wdDsw45VoM1iOtd0Hjj7Ic1j5onYHgsGE8dA5BdjeCodlZZRuvtJ3D1lRKLqPBE52GuMTrJt4BSK"
+});
+
+export async function getStaticProps() {
+  // It's important to default the slug so that it doesn't return "undefined"
+  const postFields = `
+  _id,
+  name,
+  title,
+  date,
+  excerpt,
+  coverImage,
+  "slug": slug.current,
+  "author": author->{name, picture},
+`
+  const post = await client.fetch(`
+  *[_type == "post"] | order(date desc, _updatedAt desc) {
+    ${postFields}
+  }`)
+
+  return {
+    props: {
+      post
+    }
+  }
 }

@@ -1,5 +1,6 @@
-import React,{ useRef } from 'react'
+import React,{ useRef, useState, useEffect } from 'react'
 import { motion, useAnimationControls, useInView } from 'framer-motion'
+import SectionTeamtext from './SectionTeamtext'
 
 function Sectionteam() {
 
@@ -8,21 +9,33 @@ function Sectionteam() {
   const animation = useAnimationControls()
   const animationOne = useAnimationControls()
 
-    // const scalevariant = {
-    //     hidden: { scale: 0.7},
-    //     visible: {scale: 1,
-    //       transition:{ duration: 2, repeat: Infinity}
-    //     },
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const names = ["dialogue.", "thrive.", "engage.", "explore.", "quality.", "feel."];
+
+
+  useEffect(() => {
+      for(let i = 0; i < Infinity; i++) {
+          if (currentIndex === names.length - 1) {
+              console.log("stopping");
+              return;
+            }
+            const interval = setInterval(() => {
+              const updatedData = currentIndex + 1;
+              setCurrentIndex(updatedData);
+            }, 1000);
         
-    // }
+            return () => clearInterval(interval);
+      }
+    
+  }, [currentIndex]);
+
     if(isInView) {
       animation.set({ scale: 0.8})
-      animation.start({scale: 1.1,
+      animation.start({scale: [1.1, 0.8],
        transition: {
-         duration: 1
+         duration: 2, 
        }
      })
-     animation.set({ scale: 0.8})
      }
 
     
@@ -52,12 +65,15 @@ function Sectionteam() {
         className='h-[7rem] w-[7rem] xl:h-[10rem] xl:w-[10rem] bg-red-200 rounded-[50%]'></motion.div>
         
         </div>
-        <div className='px-[5%] xl:flex xl:flex-col xl:items-center'>
+        {/* <div className='px-[5%] xl:flex xl:flex-col xl:items-center'>
         <p className='font-sans text-[1.8rem]'>"Jitter removes the need to reply on our design team to edit
             the content of our video"
         </p>
         <h3 className='font-sans mt-4 font-medium text-[2rem]'>Federico Pascal, <br /> Marketing Lead</h3>
-        </div>
+        </div> */}
+       <div className='h-[100%] text-black absolute z-1 flex items-center justify-center'>
+    <h1 className='text-[3rem]'>{names[currentIndex]}</h1> 
+    </div>
     
     </div>
   )

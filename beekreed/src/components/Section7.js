@@ -14,11 +14,35 @@ function Section7() {
   const animation = useAnimationControls()
   const textanimation = useAnimationControls()
 
+  useEffect(() => {
+
+    
+    if(isInView) {
+     textanimation.set({ y: -20, opacity: 0})
+     animation.set({ y: 20, opacity: 0})
+     animation.start({y: 0, opacity: 1,
+      transition: {
+        duration: 1 
+      }
+    }),
+    textanimation.start({y: 0, opacity: 1,
+      transition: {
+        duration: 1 
+      }
+    })
+    
+    }
+ 
+
+  }, [isInView])
+
   return (
     <section className='h-[100%] w-[100%] bg-[#90DAF9] text-white  '>
         
          <div className='px-[5%] py-8'>
-          <h3 className='font-mono mb-3 text-[#1652f0] lg:text-[1.5rem] '>Talk to us</h3>
+          <motion.h3
+          animation={textanimation}
+          className='font-mono mb-3 text-[#1652f0] lg:text-[1.5rem] '>Talk to us</motion.h3>
          <h1 className='text-black font-sans text-left leading-[2.5rem] text-[2rem] font-semibold lg:text-[3rem] xl:leading-[3.5rem]   xl:pr-[50%]'>
           Take control of your drop with scheduling.</h1>
           <p className="font-sans text-black font-normal xl:pr-[40%] text-[#ffffff70] mt-4 xl:text-[1.5rem]">

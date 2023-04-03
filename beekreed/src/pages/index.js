@@ -15,6 +15,7 @@ import Section5 from '@/components/Section5'
 import Section6 from '@/components/Section6'
 import Sectionteam from '@/components/Sectionteam'
 import Section7 from '@/components/Section7'
+import Overlay from '@/components/Overlay'
 import Footer from '@/components/Footer'
 import Hero1 from '@/components/Hero1'
 import Loader from '@/components/Loader'
@@ -25,6 +26,7 @@ import { Player } from '@lottiefiles/react-lottie-player'
 
 export default function Home() {
  const [loading, setLoading] = useState(true)
+ const [open, setOpen] = useState(false)
 
   useEffect(() => {
     import ('@dotlottie/player-component')
@@ -52,6 +54,7 @@ export default function Home() {
         <> */}
       <Header />
       <Hero1 />
+      {/* <Overlay /> */}
       <Section1 />
       <Section6 />
       <Section7 />

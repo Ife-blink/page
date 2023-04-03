@@ -70,8 +70,8 @@ function Section1() {
 
         
         
-        <div className='mt-[3rem] flex justify-center flex-wrap lg:flex-row   overflow-auto'>
-        <div className='w-[20rem] h-[20rem] flex flex-col items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem] '>
+        <div className='mt-[3rem] flex justify-center sm:flex-wrap xl:flex-row   overflow-auto'>
+        <div className='w-[20rem] h-[20rem] flex   items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem] '>
         <DynamicTweet
     author={{
       name: 'hatsune mitski (zeph)',

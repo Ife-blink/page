@@ -1,5 +1,9 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, {useRef, useEffect} from 'react'
+import { motion, useScroll,
+  useMotionValueEvent,
+  useInView, 
+  useAnimationControls,
+  delay } from "framer-motion"
 import Image from 'next/image'
 
 function Section6() {
@@ -23,6 +27,33 @@ function Section6() {
         transition:{ duration: 2, repeat: Infinity }
         },
       }
+    
+      const ref = useRef(null)
+      const isInView = useInView(ref)
+      const animation = useAnimationControls()
+      const textanimation = useAnimationControls()
+
+      useEffect(() => {
+
+    
+        if(isInView) {
+         textanimation.set({ y: -20, opacity: 0})
+         animation.set({ y: 20, opacity: 0})
+         animation.start({y: 0, opacity: 1,
+          transition: {
+            duration: 1 
+          }
+        }),
+        textanimation.start({y: 0, opacity: 1,
+          transition: {
+            duration: 1 
+          }
+        })
+        
+        }
+     
+    
+      }, [isInView])
 
   return (
     <section className=' w-[100%] bg-black text-white'>
@@ -33,7 +64,7 @@ function Section6() {
         initial="hidden"
         animate="visibleFour"
         variants={picvariant}
-        className=" absolute md:h-[20rem] w-[20rem] flex justify-center items-center z-3 ">
+        className=" absolute md:h-[20rem] w-[20rem] hidden md:flex justify-center items-center z-3 ">
        <Image src="AnimationBlocks/pic1.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
          </motion.div>
          <motion.div 
@@ -55,7 +86,7 @@ function Section6() {
           initial="hidden"
           animate="visibleFive"
          variants={picvariant}
-        className=" md:h-[20rem] w-[20rem] flex justify-center items-center absolute z-4 ">
+        className=" md:h-[20rem] w-[20rem] hidden md:flex justify-center items-center absolute z-4 ">
         <Image src="AnimationBlocks/pic5.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
           </motion.div>
 
@@ -69,14 +100,20 @@ function Section6() {
        
       </div>
 
-        <div className=" py-[10%] h-[100%] flex items-center flex-col justify-start text-center xl:py-[10%]">
-        <h3 className='font-mono text-purple-600 font-medium text-[1.5rem] text-center mb-4'>Introducing</h3>
-          <h2 className="font-sans font-semibold text-3xl text-white px-[5%] text-[1.8rem] xl:text-[3rem]">
+        <div ref={ref} className=" py-[10%] h-[100%] flex items-center flex-col justify-start text-center xl:py-[10%]">
+        <motion.h3 
+        animate={textanimation}
+        className='font-mono text-purple-600 font-medium text-[1.5rem] text-center mb-4'>Introducing</motion.h3>
+          <motion.h2
+          animate={animation}
+          className="font-sans font-semibold text-3xl text-white px-[5%] text-[1.8rem] xl:text-[3rem]">
             Collaborative tools to design user experience
-          </h2>
-          <p className="font-sans font-normal text-[#ffffff70] px-[5%] mt-[1rem] xl:text-[1.5rem] xl:mt-8 xl:px-[25%]">
+          </motion.h2>
+          <motion.p
+          animate={textanimation}
+          className="font-sans font-normal text-[#ffffff70] px-[5%] mt-[1rem] xl:text-[1.5rem] xl:mt-8 xl:px-[25%]">
             Use our tools to explore your ideas and make your vision come true. Then share your work easily.
-          </p>
+          </motion.p>
         </div>
  
 

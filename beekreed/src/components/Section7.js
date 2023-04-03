@@ -1,39 +1,18 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, {useRef, useEffect} from 'react'
+import { motion, useScroll,
+  useMotionValueEvent,
+  useInView, 
+  useAnimationControls,
+  delay } from "framer-motion"
 import { Player } from '@lottiefiles/react-lottie-player'
 import Image from 'next/image'
 
 function Section7() {
 
-    const flipvariant = {
-        hidden: { opacity: 0.3, y: 0},
-        visible: {y: 0, opacity: 1,
-          transition:{ duration: 3, repeat: Infinity }
-        },
-        hiddenTwo: { opacity: 0.3, y:0, x: "-3rem"},
-        visibleTwo: {x: "3rem", opacity: [0.5,1],
-          transition:{ duration: 2, repeat: Infinity }
-        },
-        hiddenThree: { opacity: 0.3, y:0, x: "3rem"},
-        visibleThree: {x: "-3rem", opacity: [0.5,1],
-          transition:{ duration: 2, repeat: Infinity }
-      }
-    }
-
-    const opacityvariant = {
-      hidden: { opacity: 1, y: 0},
-      visible: {y: 0, opacity: 0,
-        transition:{ duration: 0.2, delay: 4 }
-      },
-      hiddenTwo: {opacity: 0 },
-      visibleTwo: { opacity: 0,
-        transition:{ duration: 0.2, repeat: Infinity }
-      },
-      hiddenThree: { opacity: 0.3, y:0, x: "3rem"},
-      visibleThree: {x: "-3rem", opacity: [0.5,1],
-        transition:{ duration: 2, repeat: Infinity }
-    }
-  }
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+  const animation = useAnimationControls()
+  const textanimation = useAnimationControls()
 
   return (
     <section className='h-[100%] w-[100%] bg-[#90DAF9] text-white  '>

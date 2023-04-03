@@ -24,13 +24,27 @@ function Section1() {
   const ref = useRef(null)
   const isInView = useInView(ref)
   const animation = useAnimationControls()
+  const textanimation = useAnimationControls()
+
+  const ref1 = useRef(null)
+  const isInView1 = useInView(ref1)
+  const animationOne = useAnimationControls()
+
+  const ref2 = useRef(null)
+  const isInView2 = useInView(ref2)
 
   useEffect(() => {
 
     
     if(isInView) {
+     textanimation.set({ y: -20, opacity: 0})
      animation.set({ x: 20, opacity: 0})
      animation.start({x: 0, opacity: 1,
+      transition: {
+        duration: 1 
+      }
+    }),
+    textanimation.start({y: 0, opacity: 1,
       transition: {
         duration: 1 
       }
@@ -40,8 +54,35 @@ function Section1() {
   console.log('in view ?'+ isInView)
 
   }, [isInView])
+
+  useEffect(() => {
+    
+    if(isInView1) {
+      animationOne.set({ y: 20, opacity: 0})
+      animationOne.start({y: 0, opacity: 1,
+      transition: {
+        duration: 1 , delay: 0.5
+      }
+    })
+    
+    }
   
 
+  }, [isInView1])
+  
+  useEffect(() => {
+    
+    if(isInView2) {
+      animationOne.set({ y: 20, opacity: 0})
+      animationOne.start({y: 0, opacity: 1,
+      transition: {
+        duration: 1 , delay: 0.5
+      }
+    })
+    
+    }
+
+  }, [isInView2])
  
  
  
@@ -60,7 +101,9 @@ function Section1() {
        </div> */}
 
         <div className='col-span-4 w-[100%] px-[5%] py-8 text-black'>
-        <h3 className='font-mono mb-3 text-purple-600 xl:text-[2rem] xl:pl-[1%]'>Talk to us</h3>
+        <motion.h3
+        animate={textanimation}
+        className='font-mono mb-3 text-purple-600 xl:text-[2rem] xl:pl-[1%]'>Talk to us</motion.h3>
         <motion.h3
         initial="hiddenThree"
         animate={animation}
@@ -71,7 +114,11 @@ function Section1() {
         
         
         <div className='mt-[3rem] flex justify-center sm:flex-wrap xl:flex-row   overflow-auto'>
-        <div className='w-[20rem] h-[20rem] flex   items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem] '>
+        <motion.div 
+        initial="hiddenThree"
+        animate={animationOne}
+        ref={ref1}
+        className='w-[20rem] h-[20rem] flex   items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem] '>
         <DynamicTweet
     author={{
       name: 'hatsune mitski (zeph)',
@@ -86,8 +133,12 @@ function Section1() {
     permalink="https://twitter.com/zephanijong/status/1579243456869781505"
     fitInsideContainer
     theme="dim" 
-  /></div>
-        <div className='w-[20rem] h-[20rem] flex flex-col justify-between text-white py-[4%] px-[5%] sm:w-[60rem]'>
+  /></motion.div>
+        <motion.div 
+        initial="hiddenThree"
+        animate={animationOne}
+        ref={ref1} 
+        className='w-[20rem] h-[20rem] flex flex-col justify-between text-white py-[4%] px-[5%] sm:w-[60rem]'>
         <DynamicTweet
     author={{
       name: 'hatsune mitski (zeph)',
@@ -103,7 +154,7 @@ function Section1() {
     fitInsideContainer
     theme="dim" 
   />
-  </div>
+  </motion.div>
         </div>
         
 

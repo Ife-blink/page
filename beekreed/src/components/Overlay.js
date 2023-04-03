@@ -8,30 +8,34 @@ function Overlay({ close }) {
     <div className='h-[100vh] flex justify-end fixed z-10  w-[100vw]'>
         <div className='w-[100%] bg-[#ffffff40] h-[100%] font-sans '>
         
-        <aside id="cta-button-sidebar" className="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-        <div className="flex py-4 pr-6 bg-gray-50 justify-end items-center  text-sm text-gray-500  xl:hidden hover:bg-gray-100 ">
+        <motion.div 
+        initial={{x: 20}}
+        animate={{x: 0}}
+        transition={{ delay: 0.1}}
+        className="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+        <div className="flex py-4 pr-6 bg-purple-600 justify-end items-center  text-sm text-gray-500  xl:hidden ">
    
-   <IoMdClose onClick={close} size={25} />
+   <IoMdClose onClick={close} color={'FFFFFF'} size={25} />
 </div>
-   <div className="h-[90vh] px-3 py-1 flex flex-col justify-between bg-gray-50 dark:bg-gray-800">
+   <div className="h-[90vh] px-3 py-1 flex flex-col justify-between bg-purple-600">
       <ul className="space-y-2 font-medium">
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 ">
+            <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 ">
                <span className="font-sans ">Dashboard</span>
             </a>
          </li>
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 ">
+            <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 ">
               <span className="flex-1 font-sans whitespace-nowrap">Kanban</span>
            </a>
          </li>
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 ">
+            <a href="#" className="flex items-center p-2 text-white rounded-lg  ">
               <span className="flex-1 font-sans whitespace-nowrap">Inbox</span>
             </a>
          </li>
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 ">
+            <a href="#" className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 ">
               <span className="flex-1 font-sans whitespace-nowrap">Users</span>
             </a>
          </li>
@@ -51,7 +55,7 @@ function Overlay({ close }) {
          <a className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 font-sans dark:hover:text-blue-300" href="#">Turn new navigation off</a>
       </div>
    </div>
-</aside>
+</motion.div>
         </div>
     </div>
   )

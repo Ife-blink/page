@@ -41,7 +41,7 @@ function Section5() {
          <div className=''>
          </div>
          <div className='w-[100%] h-[100%] flex items-end '>
-         <div className='w-[100px] h-[50px]  bg-purple-800'></div>
+         <div className='w-[100px] h-[50px]'></div>
          </div>
          <div className='w-[100%] flex justify-end px-[5%] md:mt-0 sm:mt-[1rem]'>
          <h2 className='font-sans font-semibold md:text-[6rem] leading-[2rem] text-white sm:text-[4rem]'>inquiry</h2>

@@ -48,7 +48,7 @@ function Section4({ post }) {
          </div>
          </div>
         </div>
-         <div className='font-sans text-[#ac41f8] font-semibold'>
+         <div className='font-sans flex justify-center py-6 text-[#ac41f8] font-semibold'>
           <h1>
            See more
           </h1>

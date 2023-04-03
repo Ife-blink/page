@@ -54,7 +54,7 @@ export default function Home() {
         <> */}
       <Header open={() => setOpen(!open)} />
       <Hero1 />
-      { open? <Overlay /> : null }
+      { open? <Overlay close={() => setOpen(!open)} /> : null }
       <Section1 />
       <Section6 />
       <Section7 />

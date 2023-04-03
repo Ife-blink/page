@@ -1,39 +1,54 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React,{ useRef } from 'react'
+import { motion, useAnimationControls, useInView } from 'framer-motion'
 
 function Sectionteam() {
 
-    const scalevariant = {
-        hidden: { scale: 0.5},
-        visible: {scale: 1,
-          transition:{ duration: 0.3, repeat: Infinity}
-        },
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+  const animation = useAnimationControls()
+  const animationOne = useAnimationControls()
+
+    // const scalevariant = {
+    //     hidden: { scale: 0.7},
+    //     visible: {scale: 1,
+    //       transition:{ duration: 2, repeat: Infinity}
+    //     },
         
-    }
+    // }
+    if(isInView) {
+      animation.set({ scale: 0.8})
+      animation.start({scale: 1.1,
+       transition: {
+         duration: 1
+       }
+     })
+     animation.set({ scale: 0.8})
+     }
+
+    
 
   return (
     <div className=' w-[100%] text-black flex flex-col pb-[5%]'>
       <h3 className='font-mono px-[5%] mt-7 text-purple-600 lg:text-[2rem] '>Talk to us</h3>
-        <div className='w-[100%] flex flex-row justify-between mt-7 mb-[10%] px-[5%]'>
+        <div ref={ref} className='w-[100%] flex flex-row justify-between mt-7 mb-[10%] px-[3%]'>
         <motion.div
         initial="hidden"
-        animate="visible"
-        variants={scalevariant}
+        animate={animation}
         className='h-[7rem] w-[7rem] xl:h-[10rem] xl:w-[10rem] bg-green-200 rounded-[50%]'></motion.div>
         <motion.div
         initial="hidden"
-        animate="visible"
-        variants={scalevariant}
+        animate="visibleOne"
+      
         className='h-[7rem] w-[7rem] xl:h-[10rem] xl:w-[10rem] bg-purple-200 rounded-[50%]'></motion.div>
          <motion.div
         initial="hidden"
-        animate="visible"
-        variants={scalevariant}
+        animate="visibleTwo"
+      
         className='h-[7rem] w-[7rem] xl:h-[10rem] xl:w-[10rem] bg-blue-200 rounded-[50%]'></motion.div>
         <motion.div
         initial="hidden"
-        animate="visible"
-        variants={scalevariant}
+        animate="visibleThree"
+      
         className='h-[7rem] w-[7rem] xl:h-[10rem] xl:w-[10rem] bg-red-200 rounded-[50%]'></motion.div>
         
         </div>

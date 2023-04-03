@@ -2,15 +2,17 @@ import React from 'react'
 import { IoMdClose } from 'react-icons/io'; 
 
 
-function Overlay() {
+function Overlay({ close }) {
   return (
-    <div classNameName='h-[100vh] flex justify-end fixed z-10  w-[100vw]'>
-        <div classNameName='w-[80%] h-[100%] font-sans bg-purple-600'>
+    <div className='h-[100vh] flex justify-end fixed z-10  w-[100vw]'>
+        <div className='w-[100%] bg-[#ffffff40] h-[100%] font-sans '>
+        
         <aside id="cta-button-sidebar" className="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-       <div>
-       <IoMdClose />
-       </div>
-   <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="flex py-4 pr-6 bg-gray-50 justify-end items-center  text-sm text-gray-500  md:hidden hover:bg-gray-100 ">
+   
+   <IoMdClose onClick={close} size={25} />
+</div>
+   <div className="h-full px-3 py-1 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul className="space-y-2 font-medium">
          <li>
             <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">

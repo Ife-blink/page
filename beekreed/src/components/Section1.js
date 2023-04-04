@@ -92,15 +92,14 @@ function Section1() {
         className='w-[20rem] h-[20rem] flex   items-center justify-between text-white py-[4%] px-[5%] sm:w-[60rem] '>
         <DynamicTweet
     author={{
-      name: 'hatsune mitski (zeph)',
-      username: 'zephanijong',
+      name: 'FX',
+      username: 'a_ix_d',
       image:
         'https://pbs.twimg.com/profile_images/1605512789107286016/keR9YPE2_400x400.jpg',
       isVerified: true, // try replacing this with "isProtected"
     }}
-    tweet={`if she's your girl why does she follow me on spotify`}
-    time={new Date(2022, 9, 10, 0, 52)}
-    source="Twitter for iPhone"
+    tweet={`Beekreed has helped us reduce churn by 50%`}
+    time={new Date(2023, 2, 2, 0, 52)}
     permalink="https://twitter.com/zephanijong/status/1579243456869781505"
     fitInsideContainer
     theme="dim" 

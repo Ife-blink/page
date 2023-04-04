@@ -1,5 +1,6 @@
 import React from 'react'
 import { TbMenu } from 'react-icons/tb';
+import { Navbar, Link } from "@nextui-org/react";
 
 function Header({ open }) {
   return (
@@ -13,7 +14,7 @@ function Header({ open }) {
        <button className='border-purple-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Talk to us </button> 
        </div>
        <div className='xl:hidden' onClick={open} >
-       <TbMenu />
+      
        </div>
        </div>
        </div>

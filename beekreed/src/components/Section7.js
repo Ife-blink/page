@@ -1,9 +1,5 @@
 import React, {useRef, useEffect} from 'react'
-import { motion, useScroll,
-  useMotionValueEvent,
-  useInView, 
-  useAnimationControls,
-  delay } from "framer-motion"
+import { motion, useAnimationControls, useInView } from 'framer-motion'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Image from 'next/image'
 
@@ -16,8 +12,8 @@ function Section7() {
 
   useEffect(() => {
     
-    
     if(isInView) {
+
      textanimation.set({ y: -20, opacity: 0})
      animation.set({ y: 20, opacity: 0})
      animation.start({y: 0, opacity: 1,
@@ -33,15 +29,14 @@ function Section7() {
     
     }
  
-  console.log(isInView)
   }, [isInView])
 
   return (
     <section className='h-[100%] w-[100%] bg-[#90DAF9] text-white  '>
         
-         <div className='px-[5%] py-8'>
+         <div ref={ref} className='px-[5%] py-8'>
           <motion.h3
-          ref={ref}
+          initial={{y:0}}
           animation={textanimation}
           className='font-mono mb-3 text-[#1652f0] lg:text-[1.5rem] '>Talk to us</motion.h3>
          <motion.h1 
@@ -56,7 +51,7 @@ function Section7() {
          </div>
          
          <div className='h-[100%]  bg-[#90DAF9] flex justify-center w-[100%]'>
-         <Image src="/beekreed.png" width={680} height={680} />
+         <Image alt='calender' src="/beekreed.png" width={680} height={680} />
          </div>
         
          

@@ -1,4 +1,5 @@
-import React, {useRef, useEffect} from 'react'
+import React from 'react'
+import { useEffect, useRef } from 'react'
 import { motion, useAnimationControls, useInView } from 'framer-motion'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Image from 'next/image'

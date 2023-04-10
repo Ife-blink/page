@@ -52,6 +52,26 @@ function Section4({ post }) {
           <p className='font-sans px-[5%] text-white font-normal'>{post[1].title}</p>
           : <p className='font-sans px-[5%] text-white font-normal'> Beekreed it's time to creed the fact of life</p>
          }
+
+         </div>
+         <div className='border-white border-b-[0.5px] py-[3%]  text-white flex flex-row'>
+         <h3 className='font-sans text-[#ac41f8] font-normal'>Blog</h3>
+         {post[2]? 
+          <p className='font-sans px-[5%] text-white font-normal'>{post[2]?.title}</p>
+          : <p className='font-sans px-[5%] text-white font-normal'> Beekreed it's time to creed the fact of life</p>
+         }
+        </div>
+        <div className='border-white border-b-[0.5px] py-[3%]  text-white flex flex-row'>
+         <h3 className='font-sans text-[#ac41f8] font-normal'>Blog</h3>
+         {post[3]? 
+          <p className='font-sans px-[5%] text-white font-normal'>{post[3]?.title}</p>
+          : <p className='font-sans px-[5%] text-white font-normal'> Beekreed it's time to creed the fact of life</p>
+         }
+        </div>
+         <div className='font-sans flex justify-center py-6 text-[#ac41f8] font-semibold'>
+          <h1>
+           See more
+          </h1>
          </div>
          </div>
         </div>

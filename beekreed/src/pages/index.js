@@ -15,6 +15,7 @@ import Section5 from '@/components/Section5'
 import Section6 from '@/components/Section6'
 import Sectionteam from '@/components/Sectionteam'
 import Section7 from '@/components/Section7'
+import Section8 from '@/components/Section8'
 import Overlay from '@/components/Overlay'
 import Footer from '@/components/Footer'
 import Hero1 from '@/components/Hero1'
@@ -58,10 +59,11 @@ export default function Home({post}) {
       <Hero1 />
       { open? <Overlay close={() => setOpen(!open)} /> : null }
       <Section1 />
+      <Section8 />
       <Section6 />
-      <Section7 />
       
       <Section3 />
+      <Section7 />
       <Section4 post={post} />
       <Section5 />
       <Footer />

@@ -32,20 +32,19 @@ function Section7() {
   }, [isInView])
 
   return (
-    <section className='h-[100%] w-[100%] bg-[#90DAF9] text-white  '>
+    <section className='h-[100%] w-[100%] bg-[#90DAF9] text-white xl:flex xl:flex-row '>
         
-         <div ref={ref} className='px-[5%] py-8'>
+         <div ref={ref} className='px-[5%] py-8 xl:bg-white xl:flex xl:flex-col xl:justify-center '>
           <motion.h3
-          initial={{y:0}}
           animation={textanimation}
           className='font-mono mb-3 text-[#1652f0] lg:text-[1.5rem] '>Talk to us</motion.h3>
          <motion.h1 
          animation={animation}
-         className='text-black font-sans text-left leading-[2.5rem] text-[2rem] font-semibold lg:text-[3rem] xl:leading-[3.5rem]   xl:pr-[50%]'>
+         className='text-black font-sans text-left leading-[2.5rem] text-[2rem] font-semibold lg:text-[3rem] xl:leading-[3.5rem]   xl:pr-[0%]'>
           Take control of your drop with scheduling.</motion.h1>
           <motion.p 
           animation={textanimation}
-          className="font-sans text-black font-normal xl:pr-[40%] text-[#ffffff70] mt-4 xl:text-[1.5rem]">
+          className="font-sans text-black font-normal xl:pr-[0%] text-[#ffffff70] mt-4 xl:text-[1.5rem]">
             Use our tools to explore your ideas and make your vision come true. Then share your work easily.
           </motion.p>
          </div>

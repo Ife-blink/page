@@ -20,7 +20,7 @@ function Section5() {
         <h3 className='font-sans font-light text-[0.8rem] text-[#ffffff90]'>Services</h3>
         <h2 className='font-sans font-normal text-[1.6rem] mt-[1rem] mb-[4rem] leading-[2rem]  text-white'>Creating meaniful <br /> connections</h2>
         </>
-        <p className='font-sans font-light text-[0.8rem] pr-[50%] text-[#ffffff90]'>Working with startups to build memorable brands from the ground up or established businesses to refresh and modernize</p>
+        <p className='font-sans font-light text-[0.8rem] pr-[50%] text-[#ffffff90]'>Working with startups to balance branding and technicalities from the ground up or established businesses to refresh and modernize</p>
         </div>
         <div className='h-[50px] w-[100%] flex justify-center items-center  border-[3px] border-[#29292e]'>
           

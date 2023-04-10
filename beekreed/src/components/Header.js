@@ -1,8 +1,14 @@
 import React from 'react'
+import { useRouter } from 'next/router';
 import { TbMenu } from 'react-icons/tb';
 import { Navbar, Link } from "@nextui-org/react";
 
 function Header({ open }) {
+  const router = useRouter()
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(`https://calendly.com/officialbeekreed/30min`)
+  }
   return (
     <div className='w-[100%] text-white xl:text-[1.7rem] border-b-2 sticky top-0 bg-black border-[#00000005]'>
        <div className='p-[1rem] mx-auto w-[90%] flex justify-between items-center'>
@@ -11,7 +17,7 @@ function Header({ open }) {
        <h1>Services</h1>
        <h1>About us</h1>
        <h1>Blog</h1>
-       <button className='border-purple-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Talk to us </button> 
+       <button onClick={handleClick} className='border-purple-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Talk to us </button> 
        </div>
        <div className='xl:hidden' onClick={open} >
       

@@ -38,7 +38,7 @@ function Section8() {
   }, [isInView])
 
   return (
-    <div ref={ref} className='text-black bg-[#f1f1f1] hidden pb-[5%] w-[100%]'>
+    <div ref={ref} className='text-black lg:block hidden bg-[#f1f1f1] s pb-[5%] w-[100%]'>
       <div className='flex flex-col items-center justify-center text-center  py-[3rem] text-[3rem]'>
         <h3 className='font-mono text-[1.3rem] text-orange-600'>Who we are</h3>
       <h1 className='font-semibold font-sans'>We are the best choice for your <br /> <span className='text-purple-600'>

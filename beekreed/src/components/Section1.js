@@ -58,7 +58,7 @@ function Section1() {
  
  
   return (
-    <section className='xl:flex pb-4 flex-col hidden'>
+    <section className='lg`:hidden pb-4 flex flex-col'>
       
        {/* <div className='col-span-6 overflow-x-auto flex flex-row mt-4 mb-[4rem] w-[100%]'>
         <div className='flex md:flex-row flex-wrap justify-center items-center md:justify-between w-[100%] md:px-[10%]'>

@@ -19,7 +19,7 @@ function AboutUs() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex justify-center flex-col'>
+      <main className='flex bg-[#f4f4f4] justify-center flex-col'>
       <Header />
       <Hero />
       <HeroImage />

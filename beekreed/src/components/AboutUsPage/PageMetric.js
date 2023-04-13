@@ -8,7 +8,7 @@ function PageMetric() {
        <span className='text-slate-400'> Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</span>
         </h3>
         </div>
-        <div className='grid xl:grid-cols-3 gap-4 w-[100%] xl:pb-0 pb-[2rem] px-[10%] mt-[5rem]'>
+        <div className='grid xl:grid-cols-3 gap-4 w-[100%] xl:pb-0 pb-[3rem] px-[10%] mt-[5rem]'>
         <div className='h-[100%] w-[100%]'>
           <h2 className='text-purple-900 text-[3rem] font-medium font-mono'>50%</h2>
           <p className='font-sans text-[#9e9e9e]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</p>

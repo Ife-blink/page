@@ -5,6 +5,9 @@ import Hero from '@/components/AboutUsPage/Hero'
 import HeroImage from '@/components/AboutUsPage/HeroImage'
 import PageMetric from '@/components/AboutUsPage/PageMetric'
 import Header from '@/components/Header'
+import Value from '@/components/AboutUsPage/Value'
+import Team from '@/components/AboutUsPage/Team'
+import Footer from '@/components/AboutUsPage/Footer'
 
 
 function AboutUs() {
@@ -21,6 +24,9 @@ function AboutUs() {
       <Hero />
       <HeroImage />
       <PageMetric />
+      <Value />
+      <Team />
+      <Footer />
       </main>
     </>
   )

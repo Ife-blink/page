@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import localFont from '@next/font/local'
 import { Space_Mono } from 'next/font/google'
+import GoogleAnalytics from "@bradgarropy/next-google-analytics"
 
 const generalsans = localFont({
   src: [
@@ -41,4 +42,7 @@ const spc_mono = Space_Mono({
 })
 
 export default function App({ Component, pageProps }) {
-  return <main className={`${generalsans.variable} ${spc_mono.variable}`}> <Component {...pageProps} /> </main> }
+  return <main className={`${generalsans.variable} ${spc_mono.variable}`}>
+     <GoogleAnalytics measurementId="G-591MQXFG7Q" />
+     <Component {...pageProps} /> 
+     </main> }

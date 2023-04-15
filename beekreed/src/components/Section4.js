@@ -23,7 +23,7 @@ function Section4({ post }) {
   const router = useRouter()
   const handleClick = (e) => {
     e.preventDefault()
-    router.push(`https://calendly.com/officialbeekreed/30min`)
+    router.push(`https://blog-beekreed-7t2p.vercel.app`)
   }
 
   return (
@@ -69,9 +69,9 @@ function Section4({ post }) {
          }
         </div>
          <div className='font-sans flex justify-center py-6 text-[#ac41f8] font-semibold'>
-          <h1>
+          <button onClick={handleClick}>
            See more
-          </h1>
+          </button>
          </div>
          </div>
         </div>

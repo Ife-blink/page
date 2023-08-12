@@ -49,43 +49,43 @@ function Hero1() {
         initial="hiddenFour"
         animate="visibleEight"
         variants={textvariant}
-        className='font-mono text-purple-600 font-medium text-center '>Introducing</motion.h3>
+        className='font-mono text-blue-600 font-medium text-center '>Introducing</motion.h3>
         <h1 className='items-center justify center font-semibold md:mt-3 text-center xl:text-[4rem] md:leading-[4rem] text-[2rem] md:text-[3.2rem]'>
         <motion.span
           initial="hidden"
           animate="visible"
           variants={textvariant}
           className="inline-block"
-        >We design</motion.span> <motion.span
+        >The most</motion.span> <motion.span
         initial="hidden"
           animate="visibleTwo"
           variants={textvariant}
           className="inline-block"
-        >experiences</motion.span> <motion.span
+        >intuitive</motion.span> <motion.span
          initial="hidden"
          animate="visibleThree"
          variants={textvariant}
          className="inline-block"
-         >that enable
+         >way to buy, sell
          </motion.span> <motion.span
         initial="hidden"
         animate="visibleFour"
         variants={textvariant}
         >
-        people
+        and trade
         </motion.span> <motion.span
           initial="hidden"
         animate="visibleFive"
         variants={textvariant}
         className="inline-block "
-        > feel</motion.span>
+        > crypto</motion.span>
         </h1>
         <motion.p 
         initial="hiddenTwo"
         animate="visibleSix"
         variants={textvariant} 
         className='text-gray-400 px-1 mt-3 text-[1rem] text-center xl:text-[1.5rem] xl:px-[10%] xl:mt-8'>
-         We empower our clients to refocus on the things that drive rapid and sustainable growth.
+         Get started with the most accessible and secure platform to buy, sell, trade, and earn cryptocurrencies.
         </motion.p>
         <motion.div 
         initial="hiddenThree"
@@ -93,8 +93,8 @@ function Hero1() {
         variants={textvariant}
         
         className='mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center '>
-         <button className='bg-purple-600 rounded-[0.1rem] flex justify-center items-center mr-3  px-4 py-3'>Learn more </button>
-         <button onClick={handleClick} className='border-purple-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Talk to us </button>
+         <button className='bg-blue-600 rounded-[0.1rem] flex justify-center items-center mr-3  px-4 py-3'>Get Started</button>
+         <button onClick={handleClick} className='border-blue-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Register</button>
          
          </motion.div>
     

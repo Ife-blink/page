@@ -59,20 +59,20 @@ function Section6() {
     <section className=' w-[100%] bg-black text-white'>
 
       
-      <div className="w-[100%] h-[30vh] py-[5%] overflow-hidden relative xl:h-[50vh] bg-purple-600  flex justify-center items-center">
+      <div className="w-[100%] h-[30vh] py-[5%] overflow-hidden relative xl:h-[50vh] bg-white  flex justify-center items-center">
       <motion.div 
         initial="hidden"
         animate="visibleFour"
         variants={picvariant}
         className=" absolute md:h-[20rem] w-[20rem] hidden md:flex justify-center items-center z-3 ">
-       <Image src="AnimationBlocks/pic1.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
+       <Image src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/color/sol.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
          </motion.div>
          <motion.div 
         initial="hidden"
         animate="visibleThree"
         variants={picvariant}
         className=" absolute md:h-[20rem] w-[20rem] flex justify-center items-center z-1 ">
-        <Image src="AnimationBlocks/pic4.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
+        <Image src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/color/usdc.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
          </motion.div>
         
         <motion.div
@@ -80,14 +80,14 @@ function Section6() {
           animate="visible"
          variants={picvariant}
         className=" absolute md:h-[20rem] w-[20rem] flex justify-center items-center z-2 h-[10rem] ">
-        <Image src="AnimationBlocks/pic3.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
+        <Image src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/color/btc.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
           </motion.div>
           <motion.div
           initial="hidden"
           animate="visibleFive"
          variants={picvariant}
         className=" md:h-[20rem] w-[20rem] hidden md:flex justify-center items-center absolute z-4 ">
-        <Image src="AnimationBlocks/pic5.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
+        <Image src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/color/eth.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
           </motion.div>
 
         <motion.div 
@@ -95,7 +95,7 @@ function Section6() {
         animate="visibleTwo"
         variants={picvariant}
         className=" md:h-[20rem] w-[20rem] flex justify-center items-center absolute z-0 ">
-       <Image src="AnimationBlocks/pic2.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
+       <Image src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/color/trx.svg" className='w-[6rem] xl:w-[10rem]' width={200} height={200} />
          </motion.div>
        
       </div>
@@ -103,7 +103,7 @@ function Section6() {
         <div ref={ref} className=" py-[10%] h-[100%] flex items-center flex-col justify-start text-center xl:py-[10%]">
         <motion.h3 
         animate={textanimation}
-        className='font-mono text-purple-600 font-medium text-[1.5rem] text-center mb-4'>Introducing</motion.h3>
+        className='font-mono text-purple-600 font-medium text-[1.5rem] text-center mb-4'>Trade multiple coins</motion.h3>
           <motion.h2
           animate={animation}
           className="font-sans font-semibold text-3xl text-white px-[5%] text-[1.8rem] xl:text-[3rem]">

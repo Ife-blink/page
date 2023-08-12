@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import TextLoop from "react-text-loop";
+// import TextLoop from "react-text-loop";
 import Link from 'next/link';
 import { motion, useScroll,
   useMotionValueEvent,
@@ -38,18 +38,12 @@ function Section8() {
   }, [isInView])
 
   return (
-    <div ref={ref} className='text-black lg:block hidden bg-[#f1f1f1] s pb-[5%] w-[100%]'>
-      <div className='flex flex-col items-center justify-center text-center  py-[3rem] text-[3rem]'>
-        <h3 className='font-mono text-[1.3rem] text-orange-600'>Who we are</h3>
-      <h1 className='font-semibold font-sans'>We are the best choice for your <br /> <span className='text-purple-600'>
-      <TextLoop>
-                    <span>Branding</span>
-                    <span className='text-green-400'>Social Ads</span>
-                    <span className='text-orange-500'>Digital Marketing</span>
-                </TextLoop></span></h1>
+    <div ref={ref} className='text-black lg:block hidden bg-[#f1f1f1] h-[100vh] w-[100%]'>
+      <div className='flex  text-white flex-col items-center justify-center text-center h-[100%] w-[50%] bg-black py-[3rem] text-[3rem]'>
+      <h1 className='font-sans font-medium leading-[3.2rem] px-6 text-left'>Earn up to $100 dollars worth of crypto on quantum</h1>
       </div>
         
-        <div  className='flex flex-row justify-between px-[3%]'>
+        {/* <div  className='flex flex-row justify-between px-[3%]'>
             <motion.div
             animate={animation}
             className='h-[80%] mt-8 w-[24%] bg-black rounded-[20px] overflow-hidden'>
@@ -71,7 +65,7 @@ function Section8() {
             <Image layout='responsive' height={600} width={300} src={`http://source.unsplash.com/csJt89dL9pE`} />
             </motion.div>
             
-        </div>
+        </div> */}
     </div>
   )
 }

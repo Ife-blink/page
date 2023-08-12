@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 function Loader() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const names = ["dialogue.", "thrive.", "engage.", "explore.", "quality.", "feel."];
+  const names = ["bitcoin.", "ethereum.", "solana.", "trade.", "on.", "quantum."];
 
 
   useEffect(() => {

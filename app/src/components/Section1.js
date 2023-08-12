@@ -58,7 +58,22 @@ function Section1() {
  
  
   return (
-    <section className='lg lg:hidden pb-4 flex flex-col'>
+    <section className=' py-[5rem] flex flex-row justify-evenly bg-blue-700'>
+
+      <div className='flex justify-center flex-col items-center'>
+        <h2 className='font-sans font-semibold text-[3rem]'>$7million</h2>
+        <h5 className='font-mono text-[#FFFFFF90]'>24h Trading volume</h5>
+      </div>
+
+      <div className='flex justify-center flex-col items-center'>
+        <h2 className='font-sans font-semibold text-[3rem]'>30+</h2>
+        <h5 className='font-mono text-[#FFFFFF90]'>Cryptocurrency listed</h5>
+      </div>
+
+      <div className='flex justify-center flex-col items-center'>
+        <h2 className='font-sans font-semibold text-[3rem]'>{"<"}0.10%</h2>
+        <h5 className='font-mono text-[#FFFFFF90]'>Lowest fees</h5>
+      </div>
       
        {/* <div className='col-span-6 overflow-x-auto flex flex-row mt-4 mb-[4rem] w-[100%]'>
         <div className='flex md:flex-row flex-wrap justify-center items-center md:justify-between w-[100%] md:px-[10%]'>
@@ -71,7 +86,7 @@ function Section1() {
         </div>
        </div> */}
 
-        <div className='col-span-4 w-[100%] px-[5%] py-8 text-black'>
+        {/* <div className='col-span-4 w-[100%] px-[5%] py-8 text-black'>
         <motion.h3
         animate={textanimation}
         className='font-mono mb-3 text-purple-600 xl:text-[2rem] xl:pl-[1%]'>Talk to us</motion.h3>
@@ -125,7 +140,7 @@ function Section1() {
     theme="dim" 
   />
   </motion.div>
-        </div>
+        </div> */}
         
 
         

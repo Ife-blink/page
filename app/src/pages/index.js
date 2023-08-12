@@ -27,7 +27,7 @@ import { createClient } from "next-sanity";
 
 
 
-export default function Home({post}) {
+export default function Home() {
  const [loading, setLoading] = useState(true)
  const [open, setOpen] = useState(false)
 
@@ -64,7 +64,7 @@ export default function Home({post}) {
       
       <Section3 />
       <Section7 />
-      <Section4 post={post} />
+      {/* <Section4 post={post} /> */}
       <Section5 />
       <Footer />
       </>
@@ -91,26 +91,26 @@ export const client = createClient({
   token: "sk2xzUUXgX6faoPOe5zLKKGjpGXvtbbazWi8iWOWhWqfejLeoAEDOx4YCqmjv9KmHjAve6UamPknIlZY8w2Bdkb8KhD7uD5Qt5GeczS0wdDsw45VoM1iOtd0Hjj7Ic1j5onYHgsGE8dA5BdjeCodlZZRuvtJ3D1lRKLqPBE52GuMTrJt4BSK"
 });
 
-export async function getStaticProps() {
-  // It's important to default the slug so that it doesn't return "undefined"
-  const postFields = `
-  _id,
-  name,
-  title,
-  date,
-  excerpt,
-  coverImage,
-  "slug": slug.current,
-  "author": author->{name, picture},
-`
-  const post = await client.fetch(`
-  *[_type == "post"] | order(date desc, _updatedAt desc) {
-    ${postFields}
-  }`)
+// export async function getStaticProps() {
+//   // It's important to default the slug so that it doesn't return "undefined"
+//   const postFields = `
+//   _id,
+//   name,
+//   title,
+//   date,
+//   excerpt,
+//   coverImage,
+//   "slug": slug.current,
+//   "author": author->{name, picture},
+// `
+//   const post = await client.fetch(`
+//   *[_type == "post"] | order(date desc, _updatedAt desc) {
+//     ${postFields}
+//   }`)
 
-  return {
-    props: {
-      post
-    }
-  }
-}
+//   return {
+//     props: {
+//       post
+//     }
+//   }
+// }

@@ -59,7 +59,7 @@ function Section6() {
     <section className=' w-[100%] bg-black text-white'>
 
       
-      <div className="lg:w-[100%] max-w-[100vh] h-[30vh] py-[5%] overflow-hidden relative xl:h-[50vh] bg-black lg:bg-white flex justify-center items-center">
+      <div className="lg:w-[100%] h-[30vh] py-[5%] overflow-hidden relative xl:h-[50vh] bg-black lg:bg-white flex justify-center items-center">
       <motion.div 
         initial="hidden"
         animate="visibleFour"

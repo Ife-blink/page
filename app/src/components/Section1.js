@@ -58,20 +58,20 @@ function Section1() {
  
  
   return (
-    <section className=' py-[5rem] flex flex-row justify-evenly bg-blue-700'>
+    <section className='py-[3rem] lg:py-[5rem] flex flex-col lg:flex-row justify-between lg:justify-evenly bg-blue-700'>
 
       <div className='flex justify-center flex-col items-center'>
-        <h2 className='font-sans font-semibold text-[3rem]'>$7million</h2>
+        <h2 className='font-sans font-semibold text-[1.9rem] lg:text-[3rem]'>$7million</h2>
         <h5 className='font-mono text-[#FFFFFF90]'>24h Trading volume</h5>
       </div>
 
-      <div className='flex justify-center flex-col items-center'>
-        <h2 className='font-sans font-semibold text-[3rem]'>30+</h2>
+      <div className='flex justify-center py-5 lg:py-0 flex-col items-center'>
+        <h2 className='font-sans font-semibold text-[1.9rem] lg:text-[3rem]'>30+</h2>
         <h5 className='font-mono text-[#FFFFFF90]'>Cryptocurrency listed</h5>
       </div>
 
       <div className='flex justify-center flex-col items-center'>
-        <h2 className='font-sans font-semibold text-[3rem]'>{"<"}0.10%</h2>
+        <h2 className='font-sans font-semibold text-[1.9rem] lg:text-[3rem]'>{"<"}0.10%</h2>
         <h5 className='font-mono text-[#FFFFFF90]'>Lowest fees</h5>
       </div>
       

@@ -36,15 +36,15 @@ function Section7() {
 
   return (
     <section className='w-[100%] justify-items-center h-[100vh] bg-black  flex flex-col '>
-    <div className='w-[100%] h-[80%] flex flex-row-reverse items-center px-9'>
-   <div className='w-[50%] px-12'>
+    <div className='w-[100%] h-[80%] flex flex-col lg:flex-row-reverse items-center px-9'>
+   <div className='lg:w-[50%] w-[100%] px-0 xl:px-12'>
      <h3 className='font-mono text-blue-600'>Transfer and Buy</h3>
-     <h2 className='font-sans font-semibold text-[2.7rem]'>Buy and transfer in a click!</h2>
+     <h2 className='font-sans font-semibold text-[1.7rem] xl:text-[2.7rem]'>Buy and transfer in a click!</h2>
      <p className='flex flex-row mt-6 items-center font-sans'> <FaUnlock color='blue' className='mr-3' /> Secure and safe</p>
      <p className='font-sans flex items-center mt-3 flex-row'> <FaBitcoin color='blue' className='mr-3' />Send and receive crypto</p>
      <p className='font-sans flex items-center mt-3 flex-row'> <FaPiggyBank color='blue' className='mr-3' />Bank-grade encryption</p>
    </div>
-   <div className='w-[50%]  rounded-xl p-24 h-[100%]'>
+   <div className='lg:w-[50%] w-[100%] rounded-xl p-5 mt-5 lg:mt-0 lg:p-24 h-[100%]'>
      <div className='flex items-center bg-[#ffffff40] p-5 rounded-xl justify-center h-[100%] w-[100%]'>
      <Image layout='responsive' height={600} width={300} src={`/buy.svg`} />
      </div>

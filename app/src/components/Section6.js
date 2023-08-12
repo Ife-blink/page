@@ -59,7 +59,7 @@ function Section6() {
     <section className=' w-[100%] bg-black text-white'>
 
       
-      <div className="w-[100%] h-[30vh] py-[5%] overflow-hidden relative xl:h-[50vh] bg-white  flex justify-center items-center">
+      <div className="lg:w-[100%] max-w-[100vh] h-[30vh] py-[5%] overflow-hidden relative xl:h-[50vh] bg-black lg:bg-white flex justify-center items-center">
       <motion.div 
         initial="hidden"
         animate="visibleFour"
@@ -103,16 +103,16 @@ function Section6() {
         <div ref={ref} className=" py-[10%] h-[100%] flex items-center flex-col justify-start text-center xl:py-[10%]">
         <motion.h3 
         animate={textanimation}
-        className='font-mono text-purple-600 font-medium text-[1.5rem] text-center mb-4'>Trade multiple coins</motion.h3>
+        className='font-mono text-blue-600 font-medium text-[1.5rem] text-center mb-4'>Trade multiple coins</motion.h3>
           <motion.h2
           animate={animation}
           className="font-sans font-semibold text-3xl text-white px-[5%] text-[1.8rem] xl:text-[3rem]">
-            Collaborative tools to design user experience
+            Blazing fast swap and transfers
           </motion.h2>
           <motion.p
           animate={textanimation}
           className="font-sans font-normal text-[#ffffff70] px-[5%] mt-[1rem] xl:text-[1.5rem] xl:mt-8 xl:px-[25%]">
-            Use our tools to explore your ideas and make your vision come true. Then share your work easily.
+            Quantum swap offers trade and swaps on over 30 coins
           </motion.p>
         </div>
  

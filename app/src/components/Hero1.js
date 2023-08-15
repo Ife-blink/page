@@ -2,6 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { BsFillCalendarCheckFill } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function Hero1() {
 
@@ -93,8 +94,15 @@ function Hero1() {
         variants={textvariant}
         
         className='mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center '>
-         <button className='bg-blue-600 rounded-[0.1rem] flex justify-center items-center mr-3  px-4 py-3'>Get Started</button>
-         <button onClick={handleClick} className='border-blue-600 border-2 rounded-[0.1rem] flex justify-center items-center ml-3 px-4 py-3'>Register</button>
+          <Link href='https://app.quantum-xch.com/SignUp' passHref={true}>
+          <button className='bg-blue-600  flex justify-center items-center rounded-full mr-3  px-4 py-3'>Get Started</button>
+          </Link>
+
+          <Link href='https://app.quantum-xch.com/Login' passHref={true}>
+          <button onClick={handleClick} className='border-blue-600 border-2 rounded-full flex justify-center items-center ml-3 px-4 py-3'>Register</button>
+          </Link>
+        
+        
          
          </motion.div>
     

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
-// import TextLoop from "react-text-loop";
 import Link from 'next/link';
 import { motion, useScroll,
   useMotionValueEvent,
@@ -40,10 +39,12 @@ function Section8() {
   return (
     <div ref={ref} className='text-black flex flex-col lg:flex-row overflow-hidden bg-[#f1f1f1] lg:h-[100vh] w-[100%]'>
       <div className='flex text-white flex-col items-center justify-center text-center h-[100%] w-[100%] lg:w-[50%] bg-black py-[3rem] text-[2.9rem]'>
-      <h1 className='font-sans font-medium lg:leading-[3.2rem] pr-[5%] px-7 text-[1.9rem] text-left'>Earn up to $100 dollars worth of crypto on quantum</h1>
+      <h1 className='font-sans font-semibold lg:leading-[3.2rem] pr-[5%] px-7 text-[1.7rem] xl:text-[2.7rem] text-left'>Earn up to $100 dollars worth of crypto on quantum</h1>
       <p className='font-sans font-light mt-5 text-[#FFFFFF80] text-[1.2rem] lg:text-[1.5rem] px-7 text-left'>Discover how cryptocurrencies work and get a piece for yourself</p>
       <div className='flex flex-row mt-3 justify-start w-[100%] px-7'>
-      <button className='bg-blue-600 text-white rounded-[0.1rem] font-sans text-[1rem] mr-3  px-4 py-3'>Start earning</button>
+      <Link href='https://app.quantum-xch.com/Login' passHref={true}>
+      <button className='bg-blue-600 text-white rounded-full font-sans text-[1rem] mr-3  px-4 py-3'>Start earning</button>
+      </Link>
       </div>
       </div>
 

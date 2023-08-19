@@ -7,10 +7,7 @@ import Link from 'next/link';
 function Hero1() {
 
   const router = useRouter()
-  const handleClick = (e) => {
-    e.preventDefault()
-    router.push(`https://calendly.com/officialbeekreed/30min`)
-  }
+  
 
   const textvariant = {
     hidden: { opacity: 0, y: "1rem"},
@@ -94,12 +91,12 @@ function Hero1() {
         variants={textvariant}
         
         className='mt-[1.5rem] rounded-[5px] flex flex-row justify-center items-center '>
-          <Link href='https://app.quantum-xch.com/SignUp' passHref={true}>
+          <Link href='https://app.quantum-xch.com/Login' passHref={true}>
           <button className='bg-blue-600  flex justify-center items-center rounded-full mr-3  px-4 py-3'>Get Started</button>
           </Link>
 
-          <Link href='https://app.quantum-xch.com/Login' passHref={true}>
-          <button onClick={handleClick} className='border-blue-600 border-2 rounded-full flex justify-center items-center ml-3 px-4 py-3'>Register</button>
+          <Link href='https://app.quantum-xch.com/SignUp' passHref={true}>
+          <button className='border-blue-600 border-2 rounded-full flex justify-center items-center ml-3 px-4 py-3'>Register</button>
           </Link>
         
         
